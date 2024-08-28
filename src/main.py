@@ -122,7 +122,7 @@ if __name__ == "__main__":
     print('\n')
 
     print("=" * 50)
-    final_prompt = f'{contents_output} \n\n 위의 손해사정보고서 내용을 일자별로 요약.'
+    final_prompt = f'{contents_output} \n\n 위의 손해사정보고서 내용을 일자별로 개조식으로 요약.'
     final_stream = llm_inference(final_prompt, stream=True)
 
     for chunk in final_stream:
