@@ -95,7 +95,7 @@ if __name__ == "__main__":
 
     # final_prompt = f'\n\n {report_format_output} 위의 손해사정보고서의 내용을 다음의 내용을 바탕으로 수정해줘'
     # final_stream = llm_inference(final_prompt + diagnosis_str, stream=True)
-    final_prompt = '위의 손해사정보고서의 스타일로 다음의 정보들 이용해서 손해사정보고서 작성해줘'
+    final_prompt = '위의 손해사정보고서의 스타일로 다음의 정보들 이용해서 보험금 지급 여부 판단을 포함하여 손해사정보고서 작성해줘'
     final_stream = llm_inference(final_prompt + user_info_prompt + diagnosis_str, stream=True)
 
     print('Result Generation')
