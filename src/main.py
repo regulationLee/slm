@@ -114,16 +114,21 @@ if __name__ == "__main__":
     print('\n')
 
     print("=" * 50)
+    final_prompt = f'{contents_output} \n\n 위의 손해사정보고서 내용에서 질병 또는 부상정보별로 보험금 지급 여부 판단.'
+    final_stream = llm_inference(final_prompt, stream=True)
+
+    for chunk in final_stream:
+        print(chunk['message']['content'], end='', flush=True)
+    print('\n')
+
+    print("=" * 50)
     final_prompt = f'{contents_output} \n\n 위의 손해사정보고서 내용을 일자별로 요약.'
     final_stream = llm_inference(final_prompt, stream=True)
 
-    contents_output = ''
     for chunk in final_stream:
-        content = chunk['message']['content']
         print(chunk['message']['content'], end='', flush=True)
-        contents_output += content
     print('\n')
-    
+
 
 
     # ############# version 01 ##################
