@@ -271,11 +271,24 @@ if __name__ == "__main__":
         # eval_promplt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
         # eval_stream = llm_inference(combined_result + eval_promplt, stream=False)
 
-        final_prompt = '위의 손해사정보고서의 스타일로 아래의 조사기록을 분석해서 보험금 지급 여부 판단을 포함한 손해사정보고서 작성'
-        final_stream = llm_inference(final_prompt + user_info_prompt + combined_result, stream=True)
+        final_prompt = '위의 손해사정보고서의 스타일로 아래의 조사기록을 분석해줘'
+        final_stream = llm_inference(combined_result, stream=True)
 
+        records_output = ''
         for chunk in final_stream:
-          print(chunk['message']['content'], end='', flush=True)
+            content = chunk['message']['content']
+            print(chunk['message']['content'], end='', flush=True)
+            records_output += content
+        print('\n')
+
+        final_prompt = f'{records_output} 위의 분석 기록을 바탕으로 다음 고객에 대한 보험금 지급 여부 판단을 포함한 손해사정보고서 작성 '
+        final_stream = llm_inference(final_prompt + user_info_prompt, stream=True)
+
+        contents_output = ''
+        for chunk in final_stream:
+            content = chunk['message']['content']
+            print(chunk['message']['content'], end='', flush=True)
+            contents_output += content
         print('\n')
 
     print('Done')
