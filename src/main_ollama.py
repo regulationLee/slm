@@ -1,14 +1,198 @@
+# -*- coding: utf-8 -*-
+# !/usr/bin/env python
+import os
+import io
+import numpy
+import fitz
+import time
+import argparse
 import ollama
+import pandas as pd
+import numpy as np
 
-content = '보고서 \n\n(학습 테스트용으로 공개 및 활용불가)\n\n기본정보\n\n: \n\n\n\n고객명\n\n홍길동\n\n나이\n\n51\n\n심사자\n\n김심사\n\n접수일\n\n2024-01-01\n\n의뢰일\n\n2024-01-01\n\n완료일\n\n2024-01-10\n\n소요기일\n\n10\n\n중간보고\n\n-\n\n확인회사\n\nABC㈜\n\n확인자\n\n박하늘\n\n\n\n팀장\n\n이지구\n\n\n\n\n\n계약사항\n\n\n\n상품명\n\n계약번호\n\n계약일자\n\n계약상태\n\nzzz보험\n\n0000056\n\n2021-01-01\n\n정상 유지\n\n\n\n\n\n결과 요약\n\n\n\n계약번호\n\n청구사유\n\n사인\n\n발생일자\n\n청구금액\n\n확인 포인트\n\n확인결과\n\n0000056\n\n수술\n\nC220\n\n2022-01-01\n\n500,000\n\n고지의무 확인\n\n지급후 유지\n\n0000056\n\n수술\n\nD219\n\n2023-01-01\n\n200,000\n\n고지의무확인\n\n지급후 유지\n\n\n\n조사내용\n\n\n\n\xa0\xa01. 발생 경위\n\n\n\n고객은 보험기간 중 123병원에 내원하여 간세포암종(C22.0) 진단 하 화학색전술 시행, 456병원에 내원하여 우측 무릎에 기타 양성 신생물(D21.9) 진단 하 종양절제술 시행 후 청구함.\n\n\n\n\n\n\xa0\xa02. 치료 이력 \n\n\n\n치료기간\n\n지료/확인내용\n\n의료기관명\n\n상세치료/경위내용\n\n2022-01-01~2022-02-01\n\n간세포암(C22.0) 진단 하 6일 입원 및 간동맥화학색전술 시행\n\n123병원\n\n2022.01.101간MRI검사 상 S7부위에 재발된 간세포암 \n2022.01.25 간동맥화학색전술 시행\n\n2023-01-01~2023-02-01\n\n기타 양성신생물(D21.9) 진단 하 07일 입원 및 종양절제술 시행\n\n456병원\n\n2023.01.01 초음파검사 상 우측 슬개하에 저에코 종양 \n2023.01.25  종양 절제술 시행\n\n\n\n\xa0\xa03. 확인사항\n\n\n\n1. 확인내용 \n\n1) 최초 진단일 및 수술 적정성 확인 \n123병원 의무기록 확인 결과, 2018년 1월 간세포암에 대한 간동맥화학색전술 시행 후 경과관찰 검사 상 재발, 전이 소견 없이 지내다 2022.01.01 간MRI검사 상 재발된 간세포암 소견이 최초로 확인되어 2022.01.25 재발된 간세포암 부위S7에 대한 간동맥화학색전술 시행한 사실이 확인되며, \n\n456병원 의무기록 확인 결과, 2023.01.01 우측 무릎 부위의 종양으로 최초 내원하여 결합조직 및 기타 연조직의 기타 양성신생물(D21.9) 진단 하에 2023.0.25 종양절제술 시행한 사실이 확인됨. \n\n\n2) 고지의무 이행 여부\n치료병원 의무기록 확인 및 거주지 인근 병.의원 확인 상, 동 보험 가입 전 고지의무 위반 사항에 해당하는 특이 과거력 없는 것으로 확인됨. \n\n\n2. 가입사항 및 고지사항 \n**2021.01.01 zzz보험 가입 \n\xa0\xa0청약 시 특이 고지사항 없음 \n\n\n3. 병원확인내용 \n\nㅇ 123병원 \n내원일자 : 2013.01.01 \n진단병명 : 간세포암종(C22.0) \n치료내용 : 2013.01.25 간동맥화학색전술 시행 \n치료기간 : 2013.01.25 ~ 2013.02.01(06일 입원) \n\n내원일자 : 2013.07.01\n진단병명 : 간세포암종(C22.0) \n검사내용 : 2013.07.01 ~ 2015.01.01경과관찰 CT,MRI검사 상 전이, 재발 소견 없음 \n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa02015..07 01 CT검사 상 S7부위에 0.5cm이하의 동맥 증강 -추적관찰 소견 \n치료기간 : 2013.01.01 ~ 2015.07.01 (25회 통원) \n\n\nㅇ zzz보험 가입 - 2021.01.01\n\nㅇ 123 병원 \n내원일자 : 2022.01.01 \n진단병명 : 간세포암종(C22.0) \n검사내용 : 2022.01.01  간MRI검사 상 S7부위에 재발된 간세포암 \n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa02022.01.10  간,골반CT검사 상 TACE로 재발 간암은 잘 치료 되었고 재발 종양 없음 \n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa02022.01.15 간MRI검사 상 국소 재발 및 원격 전이 없음 \n치료내용 : 2022.01.25 간동맥화학색전술 시행 \n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa02022.02.01 ~ 2023.01.01 10차 방사선치료 시행 \n치료기간 : 2022.01.01 ~ 2022.02.01 (02회 통원) \n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa02022.01.25 ~ 2022.02.01 (06일 입원) \n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa02022.02.20 ~ 2023.01.01 (14회 통원) \n\n\nㅇ 456병원 \n내원일자 : 2023.01.01 \n내원경위 : 우측 무릎 부위 종양으로 내원 \n진단병명 : 결합조직 및 기타 연조직의 기타 양성신생물(D21.9) \n검사내용 : 2023. 01.01  초음파검사 상 우측 슬개하에 저에코 종양 \n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa02023.01.25 수술 후 조직검사 상 우측 무릎 혈관종 \n치료내용 : 2023.01.25 종양 절제술 시행 \n치료기간 : 2023.01.01 ~ 2023.03.15 (04회 통원) \n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa02023.06.10 ~ 2023.12.31 (05일 입원) \n\n\n4. 고객 면담 (2024.01.05) \n2013년 간암 진단 후 123병원에서 치료 후 경과관찰 검사 상 이상 없이 지내다가 보험 가입 후 재발암 발견되어 색전술 시행하였으며, 무릎 부위에 불룩하게 튀어나와서 456병원에 내원하여 절제술 시행하였다는 답변임. \n\n\n\n\xa0\xa04. 조사 의견\n\n\n\n[최종의견] \n본 건 확인 결과, 고객은 보험기간 중 2022.01.01 123병원에서 시행한 간MRI검사 상 S7부위에 재발된 간세포암 소견으로 2022.01.25부터 2022.02.01까지 06일간 입원 및 화학색전술 시행한 사실이 확인되며, \n보험 가입 5년 이전인 2013.01.01 간세포암에 대한 간동맥화학색전술 시행 후 가입 전 5년 이내 기간동안 재발, 전이 또는 입원, 수술 없이 지내던 중 보험 가입 후 2022.01.01 MRI검사 상 간세포암 재발 소견이 최초 진단된 것으로 확인되고, \n\n보험 기간 중 무릎 부위의 종양으로 456 병원에 내원하여 2023.01.01부터 2023.02.01까지 05일간 입원 및 종양절제술 시행한 사실이 확인됨. \n\n병력 관련하여  치료병원 의무기록 확인 및 거주지 인근 병.의원 확인상 보험 가입 전, 5년 이내 암으로 진단 받거나 입원 또는 수술 받은 사실 없는 것으로 확인되며, 2년 이내 입원 / 수술, 3개월 이내 입원 / 수술 / 추가검사(재검사) 필요소견 없는 것으로 확인되는 바, \n\n금번 청구 보험금 지급 의견이나, 최종 검토가 필요함. \n\n\n\n\n\n\xa0\xa05. 확인 기관 \n\n\n\nㅇ확인기관(2곳) \n123병원, 456병원\n\nㅇ기타\n\n\n\n\n\n\xa0\xa06. 고객 안내\n\n\n\n2024.01.10  동 보험가입 전 특이 사항 없는 것으로 확인되며, 최종적으로  서류검토 후  종결됨을 안내함. \n잘 알겠다고 하심  .\n\n\n\n\n\n처리과정 요약\n\n\n\n일자\n\n방문 및 면담\n\n장소\n\n소재지\n\n확인/면담내용\n\n2024-01-05\n\n고객\n\n기타\n\n지구\n\n안내 및 위임서류 수령\n\n2024-01-06\n\n기타\n\n병원\n\n화성\n\n123병원 의무기록 발급\n\n2024-01-07\n\n기타\n\n병원\n\n목성\n\n456병원 의무기록 발급\n\n2024-0-10\n\n기타\n\n기타\n\n지구\n\n최종보고서 제출   그런 다음 내가 주는 정보를 토대로 새로운 손해사정보고서를 만들어줘. 우선 고객이름은 성춘향이고 나이 38세, 심사자는 이초랑이야. 접수일가 의뢰일은 2024-06-01이야. 완료일은 2024-06-10이야. 확인회사는 xyz회사이고 확인자는 김바다 팀장은 이 칠성이야.계약사항은 가나다 건강보험이고 계약번호는 0000048번, 계약일자는 2021-07-01이고 정상 유지상태야. '
+from text_parser import *
+
+DATA_PATH = '/Users/glee/Desktop/sakak/TSA/samples/'
+RESULT_PATH = '/Users/glee/Desktop/sakak/slm/results/'
 
 
-stream = ollama.chat(
-  model='llama3.1:70b',
-  messages=[{'role': 'user', 'content': content}],
-  stream=True
-)
+def llm_inference(prompt, stream):
+    stream = ollama.chat(
+      model='llama3.1:latest',
+      messages=[{'role': 'user', 'content': prompt}],
+      stream=stream
+    )
+    return stream
 
-for chunk in stream:
-  print(chunk['message']['content'], end='', flush=True)
-print('\n')
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-t', "--task", type=str, default="ocr", help='doc or ocr')
+    parser.add_argument('-c', "--convert_tiff", action='store_true')
+    parser.add_argument('-cr', "--tiff_ratio", type=float, default=0.25)
+    parser.add_argument('-slm', "--gen_report", action='store_true')
+
+    parser.add_argument('-r', "--readtype", type=str, default="page", help='batch or page')
+    parser.add_argument('-nn', "--name", type=str, default="성춘향")
+    parser.add_argument('-na', "--age", type=str, default="38")
+    parser.add_argument('-nsd', "--start", type=str, default="2024-06-01")
+    parser.add_argument('-ned', "--end", type=str, default="2024-06-10")
+    parser.add_argument('-npoc', "--poc", type=str, default="이초랑")
+    parser.add_argument('-ninc', "--inc", type=str, default="TSA 손해사정")
+    parser.add_argument('-nsv', "--supervisor", type=str, default="김바다")
+    parser.add_argument('-nl', "--leader", type=str, default="이칠성")
+    parser.add_argument('-ncon', "--contract", type=str, default="가나다 건강보험")
+    parser.add_argument('-nconno', "--connum", type=str, default="0000048번")
+    parser.add_argument('-ncond', "--conday", type=str, default="2021-07-01")
+    parser.add_argument('-ncons', "--constatus", type=str, default="정상유지")
+
+    args = parser.parse_args()
+    args.data_path = DATA_PATH
+    args.result_path = RESULT_PATH
+    user_info = parse_input(args)
+    user_info_prompt = ', '.join(str(value) for value in user_info.values())
+
+    if args.task == "doc":
+        ####### read report sample and convert to str ############
+        print("\n")
+        print("=" * 50)
+        print("Read Report Template and Apply User Info ")
+        print("=" * 50)
+        report_file = '손해사정_보고서_샘플.docx'
+        file_path = os.path.join(DATA_PATH, report_file)
+        start_time = time.time()
+        document = read_report(file_path)
+        doc_time = (time.time() - start_time) / 60
+
+        print(f'\nDocument Process time: {doc_time:.2f}s')
+
+        doc_prompt = '\n\n 위의 손해사정보고서의 내용을 바탕으로 다음의 정보를 이용하여 새로운 손해사정보고서를 만들어줘'
+        input_prompt = doc_prompt + '  ' + user_info_prompt
+
+        start_time = time.time()
+        result_stream = llm_inference(document[0].text + input_prompt, stream=True)
+        llm_doc_time = (time.time() - start_time) / 60
+
+        print(f'SLM Document Process time: {llm_doc_time:.2f}s')
+
+        for chunk in result_stream:
+            print(chunk['message']['content'], end='', flush=True)
+        print('\n')
+
+    elif args.task == 'ocr':
+        ####### read medical report and convert to str ############
+        pages_to_read = 1
+
+        record_file = '차트정보_w_ocr.pdf'
+        file_path = os.path.join(DATA_PATH, record_file)
+        pdf_document = fitz.open(file_path)
+        num_pages = pdf_document.page_count
+        extracted_text = []
+
+        record_list = []
+        words_by_line = []
+        start_time = time.time()
+
+        # save pdf to tiff
+        if args.convert_tiff:
+            pdf_to_tiff(args, record_file)
+
+        if args.readtype == 'batch':
+            print("\n")
+            print("=" * 50)
+            print("Read Medical Records in a Single batch")
+            print("=" * 50)
+
+            ## read pdf by batch
+            result_text = read_records(file_path)
+            result_lines = result_text.split('\n')
+
+            file_path = 'ocr_result_words_batch.txt'
+
+            if os.path.exists(file_path):
+                with open(file_path, 'r', encoding='utf-8') as file:
+                    words_by_line = file.read()
+            else:
+                for line in result_lines:
+                    # pattern = r'\b[가-힣a-zA-Z0-9.-:]+\b'
+                    pattern = r'[가-힣a-zA-Z0-9.-:]+'
+                    result_words = re.findall(pattern, line)
+                    words_by_line.append(' '.join(result_words))
+
+                with open(file_path, 'w', encoding='utf-8') as file:
+                  for line in words_by_line:
+                    file.write(f"{line}\n")
+
+            lines = words_by_line.split('\n')
+
+            df = pd.DataFrame(lines, columns=['Text'])
+            df_diagnosis = df.iloc[1766:1813]
+            combined_result = '\n'.join(df_diagnosis['Text'])
+
+        elif args.readtype == 'page':
+            print("\n")
+            print("=" * 50)
+            print("Read Medical Records in Batches by Page")
+            print("=" * 50)
+            ## read pdf by page
+            file_path = "ocr_result_words_page.txt"
+
+            if os.path.exists(file_path):
+                with open(file_path, 'r', encoding='utf-8') as file:
+                    combined_result = file.read()
+            else:
+                for page_num in range(0, num_pages, pages_to_read):
+                    print(f'Processing pages: {page_num + 1} to {min(page_num + pages_to_read, num_pages)}')
+
+                    patient_logs_list = []
+                    words_by_line = []
+                    for i in range(pages_to_read):
+                      if page_num + i < num_pages:
+                        page = pdf_document[page_num + i]
+                        patient_logs = read_records_by_page(page, easyocr_cond=False)
+                        result_lines = patient_logs.split('\n')
+                        for line in result_lines:
+                          pattern = r'\b[가-힣a-zA-Z0-9.-:]+\b'
+                          # pattern = r'[가-힣a-zA-Z0-9.-:]+'
+                          result_words = re.findall(pattern, line)
+                          if result_words:
+                            words_by_line.append(' '.join(result_words))
+
+                        # patient_logs_list.append(words_by_line)
+
+                    combined_patient_logs = '\n'.join(words_by_line)
+
+                    record_prompt = '\n\n 위의 내용에서 사고내용, 증상, 의사 소견에 해당하는 내용을 보여줘'
+                    record_stream = llm_inference(combined_patient_logs + record_prompt, stream=False)
+
+                    record_list.append(record_stream['message']['content'])
+
+                combined_result = '\n'.join(record_list)
+
+                with open(file_path, "w", encoding='utf-8') as text_file:
+                    text_file.write(combined_result)
+
+                ocr_time = (time.time() - start_time) / 60
+                print(f'Document Process time: {ocr_time:.2f}s')
+
+    if args.gen_report:
+        lines = combined_result.split('\n')
+
+        df = pd.DataFrame(lines, columns=['Text'])
+        df.replace('', np.nan, inplace=True)
+        df_cleaned = df.dropna()
+        df_cleaned = df_cleaned.reset_index(drop=True)
+        subset_df_cleaned = df_cleaned.iloc[1583:1625]
+        combined_result = '\n'.join(subset_df_cleaned['Text'])
+
+        eval_promplt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
+        eval_stream = llm_inference(combined_result + eval_promplt, stream=False)
+
+        final_promplt = '\n\n 위의 내용을 이용해서 손해사정보고서에 쓰일 문구를 만들어줘.'
+        final_stream = llm_inference(user_info_prompt + eval_stream['message']['content'] + final_promplt, stream=True)
+
+        for chunk in final_stream:
+          print(chunk['message']['content'], end='', flush=True)
+        print('\n')
+
+    print('Done')
