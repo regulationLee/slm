@@ -281,7 +281,7 @@ if __name__ == "__main__":
             records_output += content
         print('\n')
 
-        final_prompt = f'{records_output} 위의 분석 기록을 바탕으로 다음 고객에 대한 보험금 지급 여부 판단을 포함한 손해사정보고서 작성 '
+        final_prompt = f'{records_output} 위의 분석 기록을 바탕으로 다음 고객에 대한 보험금 지급 여부 판단을 포함한 손해사정보고서를 앞서 분석한 스타일로 작성 '
         final_stream = llm_inference(final_prompt + user_info_prompt, stream=True)
 
         contents_output = ''
