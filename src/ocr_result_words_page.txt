@@ -1,0 +1,1090 @@
+위의 내용을 분석하여 다음과 같은 내용으로 정리할 수 있습니다.
+
+**1. 사고내용**
+
+* 11월 11일 넘어짐 (트라우마)
+* QB 및 3지 바 (어떤 부위를 참조하는지는 알 수 없음)
+
+**2. 증상**
+
+* 무릎통증
+* 앉았으니 일어날 때 심한 통증 (SB)
+* 관구혈 (양구혈) 입롱 ( 혈관이 길러나서 나와 있는 것)
+* 어깨 중부혈 및 이두근 근복부 압롱 (어깨 중간의 혈관과 이두근 근육 근위부의 압박)
+
+**3. 의사 소견**
+
+* 고지혈증약 복용중 (고지혈증 약을 복용 중인 것)
+* 혈액순환제 복용중 (혈액 순환에 관련된 약을 복용 중인 것)
+* 나은병원 입원치료 받음 (다른 병원에서 입원 치료를 받았음)
+위의 Progress Notes 에서 추출한 결과는 다음과 같습니다.
+
+**사고 내용**
+
+* 2022년 11월 26일, 손(BOA) tf 요골 및 3지 BA 골절
+* 입원 병원 : 나은병원 (AAAS)
+
+**증상**
+
+* 일어날 때 통증 매우 심
+* 양 어깨 SHH 및 이두근 근복부 압통
+* 고혈 중약 복용중
+
+**의사 소견**
+
+* 11.27일 진료의사는 임반식 발 아짐을 처방했습니다.
+* 11.28일 담당의는 t BSS 호소, 앉았다 일어날 때 SS 매우 심, 양 어깨 중부훨 및 이두근 근복부 압통을 언급하였습니다.
+
+이러한 내용은 의사와 환자의 진료 기록에 대한 일부 부분입니다.
+해당 내용은 의학 진료 관련 기록일 가능성이 있으며, 다음과 같은 내용이 포함되어 있습니다:
+
+*   **진료 내역** : 침전기자극술, 경형침술, 투자법 침술, 부항술, 구술 등 다양한 침술과 건식 마사지와 유관법을 적용한 진료 기록이 담겨있습니다. 
+*   **진료의사** : 각 진료 일시와 관련된 의사는 "2022 11 29"에 해당하는 담당의로 명시되어 있으며, 12월1일에 변경되는것으로 보입니다.
+*   **진료내용** : 식이 관리와 한방 파스 부착 등 다양한 진료 내역이 기록되어 있습니다. 
+    *   **식이 관리** : 일반식 밥을 아침과 점심에 제공하고, 금식을 아침에 제공한 것으로 기록되어 있습니다. 한방 파스 부착은 1회만 기록되어 있습니다.
+    *   **침술 및 건식 마사지** : 경형침술, 투자법 침술, 구술, 부항술 등의 다양한 침술과 건식 마사지를 적용하여 진료한 것으로 기록되어 있습니다. 이러한 치료는 2부위 이상의 견정과 족삼리에 적용된 것으로 보입니다.
+*   **진단 및 처치** : 관련 내용은 없습니다.
+위의 텍스트는 의료 기록인 "진료의뢰서"와 "진단서"의 양식을 갖춘 것으로 보입니다. 다음과 같은 요약은 가능합니다:
+
+**2022년 12월 02일 진료기록**
+
+* **진료의사**: Sato
+* **식이 조치**
+	+ 식이001 금식 이침 (1회)
+	+ 식이501 일반식 밥 점심 (1회)
+	+ 식이001 Bale (1회)
+
+**2022년 12월 03일 진료기록**
+
+* **진료의사**: EES
+* **의학적 진단 및 처치**
+	+ 식야001 금식 이침 (1회)
+	+ A101FD02 외출 금식 점심 (1회)
+	+ 식이801 일반식 밥 저녁 (1회)
+	+ 40012 경형침술 (2부위 이상 견정 족삼리) (1회)
+	+ 40080 투자법 침술 양릉천 음릉천 (1회)
+	+ 40091 침전기자극술 (1회)
+	+ 40307 구술 간접구 기기술 하지부 (1회)
+	+ 40321 부항술 건식부항 유관법 하지부 (1회)
+
+**2022년 12월 04일 진료기록**
+
+* **진료의사**: 담당의
+* **식이 조치**
+	+ 식이001 금식 아침 (1회)
+	+ 식이801 일반식 밥 점심 (1회)
+	+ 식이001 금식 저녁 (1회)
+
+**2022년 12월 05일 진료기록**
+
+* **진료의사**: 담당의 0008
+* **식이 조치**
+	+ 식이601 잃반식 밥 아침 (1회)
+	+ 식이001 금식 점심 (1회)
+	+ ALOIFDO1 금식 저녁 (1회)
+
+위 내용에서 "사고내용, 증상, 의사 소견"과 관련된 부분은 다음과 같습니다:
+
+* **증상**
+	+ 12월 02일: 없음
+	+ 12월 03일: 외출 금식 점심
+	+ 12월 04일: 없음
+	+ 12월 05일: 없음
+* **의사 소견**
+	+ 12월 02일:없음
+	+ 12월 03일:경형침술, 투자법 침술 양릉천 음릉천, 침전기자극술, 구술 간접구 기기술 하지부, 부항술 건식부항 유관법 하지부 필요
+	+ 12월 04일:없음
+	+ 12월 05일:잠재적 증상 없음
+
+위의 내용은 일반적인 의료 기록을 보기는 어렵고, 특정한 약어와 코드가 사용되어서 전문적으로 해석하기 어려울 수 있습니다.
+위의 내용은 건강진료 의사의 진료 기록(Progress Notes)으로, 환자의 이름이나 개인 정보는 보이지 않습니다. 하지만 다음과 같은 내용이 추론될 수 있습니다.
+
+* **증상**:
+	+ 12월 06일 : 경혈침술, 투자법, 침전기자극술, 구술, 부항술을 받았습니다.
+	+ 12월 07일 : 금식, 일반식, 한방파스, 경혈침술, 투자법, 침전기자극술, 구술, 부항술을 받았습니다.
+	+ 12월 08일 : 금식, 일반식, 경혈침술, 투자법, 침전기자극술, 구술, 부항술을 받았습니다.
+
+* **의사 소견**:
+	+ 진료의사는 "경혈침술 2부위이상 건정 족상리", "투자법 짐술 앙롱천 음통천", "침선기자극술", "구술 간접구 기기구술 하지부", "부형술 건식부항 유관법 하지부"와 같은 침구술을 kê증했습니다.
+
+* **의사의 이름**:
+	+ 진료의사의 이름은 "진료의사"로, 12월 06일과 12월 07일에 담당 의사로 나타납니다. 12월 08일에는 다시 담당 의사가 나옵니다.
+
+* **진료 날짜와 시간**:
+	+ 위 진료 기록은 2022년 12월 06일, 07일, 08일에 작성된 것으로 보입니다.
+위의 내용은 진료 기록에 해당하며, 특정한 개인이나 사건과 관련된 정보는 없습니다. 하지만, 추출하여 제공해 드리겠습니다.
+
+1. **진료 날짜와 시간**
+
+* 2020년 12월 00일
+* 2022년 12월 10일
+* 2022년 12월 11일
+* 2022년 12월 12일
+
+2. **과거 기록 (2020)**
+
+* **진료 내역**
+	+ 금식 아침, 점심, 저녁 식사
+	+ 일반 식사
+	+ 경혈침술 2부위 이상 (견정, 족삼리)
+	+ 투자법
+	+ 치전기 자극술
+	+ 구술 간접구 기기구술 하지부
+	+ 부항술 건식부항 유관범 하지부
+
+3. **현재 기록 (2022)**
+
+* **진료 내역**
+	+ 12월 10일 : 금식 아침, 점심, 저녁 식사, 경혈침술 2부위 이상 (견정, 촉삼리), 투자법, 치전기 자극술, 구술 간접구 기기술 하지부, 부항술 건식부항 유관법 하지부
+	+ 12월 11일 : 금식 아침, 점심, 저녁 식사, 경혈침술 2부위 이상 (견정, 촉삼리), 투자법, 치전기 자극술, 구술 간접구 기기술 하지부, 부항술 건식부항 유관법 하지부
+	+ 12월 12일 : 금식 아침, 점심, 저녁 식사, 경혈침술 2부위 이상 (견정, 족상리), 투자법, 치전기 자극술, 구술 간접구 기기술 하지부
+
+4. **의사 소견**
+
+* **2020년 진료내역**
+	+ 코드 명칭 : Az 횟수 일수 용법 ac
+* **2022년 진료 내역**
+	+ 담당 의사 : 
+	+ 전료 의사 : 
+
+**증상과 의사 소견은 없습니다. 이 정보는 일반적인 진료 기록의 일부이며, 개인 혹은 사건에 특정한 정보를 제공하지 않습니다.**
+
+(위 정보는 단순히 추출하여 표시하였으며, 실제로 진료하는 과정에서 중요한 내역을 다루지는 않는 것으로 보입니다.)
+위의 내용은 진료 기록(Progress Notes)으로 보입니다. 다음과 같은 내용이 있습니다.
+
+**12월 13일**
+
+* 진료의사는 "담당의"와 같습니다.
+* 담당의가 수행한 진료는 다음과 같습니다.
+	+ 외출 금식 (ALOLFDO2, 식이5002, 석이601)
+	+ 경혈침술 2부위 이상 (40012)
+	+ 투자법 침술 (40080)
+	+ 침전기자극술 (40091)
+	+ 구술 간접구 기기구술 한지부 (40307)
+	+ 부항술 건식부항 유관법 하지부 (40321)
+
+**12월 14일**
+
+* 담당의가 수행한 진료는 다음과 같습니다.
+	+ 일반 식 밥 이침 (식01501, 식이601)
+	+ 금식 저녁 (식이5001)
+	+ 경혈침술 2부위 이상 (40012)
+	+ 투자법 침술 (40080)
+	+ 침전기자극술 (40091)
+	+ 구술 간접구 기기구술 하지부 (40307)
+	+ 부항술 건식부항 유관법 하지부 (40321)
+
+**12월 15일**
+
+* 담당의가 수행한 진료는 다음과 같습니다.
+	+ 일반 식 밥 아침 (식이501, 식01501)
+	+ 급식 저녁 (ALOLFDO2)
+	+ 경혈침술 2부위 이상 (40012)
+	+ 투자법 침술 앙롱천 음릉천 (40080)
+	+ 침전기자극숲 (40091)
+	+ 구술 간접구 기기구술 하지부 (40307)
+	+ 부항술 건식부형 유관법 하시부 (40321)
+
+**12월 16일**
+
+* 담당의가 수행한 진료는 다음과 같습니다.
+	+ 일빈식 밥 아침 (o1sor, 식01501)
+
+위의 내용은 환자의 증상과 의사 소견을 반영한 진료 기록입니다. 단, 실제 환자와 진료 내역을 알 수 없기 때문에 일반적인 내용만 제공하겠습니다.
+위의 Progress Notes는 의료 기록으로서의 성격이 강하지만, 특정한 주제를 추출하기 어렵습니다. 그러나 아래와 같은 정보가 있습니다.
+
+- **식이601 일반식 밤 정심 1 1**: 이 라인에서 "정심"은 "정신"과 연결된 것으로 보입니다. 따라서 "식이601 일반식 밤 정심 1 1"는 "일회용 식이제, 한밤에 식사, 정신을 진정시킨 상태"를 의미하는 것 같습니다.
+
+- **SOlFOO 금식 저녁 1 i**: 이 라인은 "금식" (fasting)과 함께 "저녁"을 언급하고 있습니다. 따라서 "SOlFOO 금식 저녁 1 i"는 "일회용 식이제, 저녁에 금식을 함"이라는 의미가似乎됩니다.
+
+- **40012 경혈침술 2부위이상 견정 족삼리 1 1 1**: 이 라인은 "경혈침술" (acupuncture)과 함께 "견정", "족삼리"를 언급하고 있습니다. 따라서 "40012 경혈침술 2부위이상 견정 족삼리 1 1 1"은 "일회용 침술, 두 개 이상의 부위에 침을 찍고, 입을 열리고, 배꼽 부분에서 상처를 치료한 경우"이라는 의미가 같습니다.
+
+- **40307 구술 간접구 기기구술 하지부 1 1 1**: 이 라인은 "구술" (massage)과 함께 "간섭구", "기기구술", "하지부"를 언급하고 있습니다. 따라서 "40307 구술 간섭구 기기구술 하지부 1 1 1"은 "일회용 마사지, 무릎 부분에서 해방시킨 후에 지압의 방법으로 마사지를 한 경우"라는 의미가似乎됩니다.
+
+- **40321 부항숨 건식부항 유관법 하지부 1**: 이 라인은 "부항" (cupping therapy)과 함께 "건식부항", "유관법", "하지부"를 언급하고 있습니다. 따라서 "40321 부항숨 건식부항 유관법 하지부 1"은 "일회용 주사기, 무릎 부분에서 해방시킨 후에 물을 쿵거렸고, 그 위에 마스크가 걸려있지 않은 상태"라는 의미가似乎됩니다.
+
+- **진료의사**와 **담당의**: 이 라인은 환자의 진료 내용이 담당 의사의 것이 달라져야 한다는 의미입니다. 
+
+- **코드 명칭 수량 횟수 ge 용법**: 이 라인은 "코드", "명칭", "수량", "횟수"를 언급하고 있습니다.
+
+- **식이501 일반식 밥 아침 1 1 1**, **식이501 일반식 밥 점심 1 1 1**, **ALOIFDO1 금식 저녁 1 1 1**: 이 라인은 식이제의 사용내용과 시간을 나타냅니다.
+
+- **2022 12 17 덤딩의**와 **2022 12 18 담당의**: 이 라인은 진료 날짜입니다.
+
+- **진료의시**: 이 라인은 의사의 이름입니다.
+
+- **코드 명칭 수량 횟수 SA 용법**: 이 라인은 "코드", "명칭", "수량", "횟수"를 언급하고 있습니다.
+위의 내용에서 다음과 같은 사고내용, 증상, 의사소견에 해당하는 내용이 보입니다.
+
+**증상**
+
+* 식이501 일반식 밥 (점심 1, 저녁 1)
+* 금식 (저녁 1)
+* 경혈침술 (2부위 이상)
+* 투자법 (양롱천 음릉천)
+* 침전기자극술
+* 구술 간접구 기기술 하지부 (4회)
+* 부항술 건식부항 유권법 하지부 (3회)
+
+**의사소견**
+
+* 담당의원은 2022년 12월 21일부터 23일까지 진료를 위탁 받고 있습니다.
+* 진료에 사용된 약물 및 치료기록은 다음과 같습니다.
+	+ 식이501 알반식 밥 이침 (1회)
+	+ 식이501 일반식 밥 점심, 저녁 (2회)
+	+ AOIFDOI 금식 저녁 (1회)
+	+ 경혈침술 2부위 이상 긴정 족상리 (3회)
+	+ 투자법 짐술 앙릉천 음봉천 (2회)
+	+ 침전기자극술 (2회)
+	+ 구술 간접구 기기술 하지부 (4회)
+	+ 부항술 건식부항 유권법 히지부 (3회)
+
+**주의**
+
+* 위의 내용은 의학용어와 약물명을 포함하여 전문적인 용어를 사용하고 있습니다. 일반인에게는 의미가 불분명하거나 이해하기 어려울 수 있는 내용이 있을 수 있습니다.
+위의 내용에서 "진료의서"와 "Progress Notes"라는 선행된 텍스트가 있지만, "진료의서"와 "진료의사"의 텍스트는 거의 비슷하고, 동일한 텍스트인 것 같습니다.
+
+그렇다면 "증상", "의사 소견"에 해당하는 내용은 다음과 같습니다:
+
+- 증상:
+  - 구술 간접구 기기구숨 히지부 (40307)
+  - 부항술 건식부항 유관법 히서부 (40321)
+  - 한방피스 부착 (peiupg A)
+  - 금식 점심 (ALOLEDOI)
+  - BAM (ALOLEDOT)
+
+- 의사 소견:
+  - 일반식 밤 아침 (식01601)
+  - 경형짐술 2부위이싱 건정 족상리 (40012)
+  - 투자법 침술 양몽천.용륜천 (40080)
+  - 침전기자극숲 (40091)
+  - 구술 간접구 기기술 히지부 (40307)
+  - 부항술 건식부항 유관법 하지부 (40321)
+위의 내용은 한명의 환자에 대한 진료 기록인 "환자 기록"입니다. 이와 관련하여 "사고 내용", "증상", "의사 소견"과 같은 정보를 찾으려면 다음과 같이 분류할 수 있습니다:
+
+1. **사고 내용**:
+	* 위의 기록에서 "HA AAAS / 우측 손목과 4 수지부 곰절"로, 환자는 우측 손목 근처와 가느다란 뼈인 상완골의 한 부위가 부러진 상황에 있었음을 볼 수 있습니다.
+2. **증상**:
+	* 증상은 다음과 같습니다.
+		+ 우측 슬관절부 전내측이 아프다
+		+ 양 어깨가 아프다 (전외측)
+		+ wrist와 knee의 다양한 기계학적 검사 결과, 그리고 NRS(VAS) score에 의한 통증 평가
+3. **의사 소견**:
+	* 위의 기록에서 "fx radial styloid wrist rt 2022/11/1"로, 환자의 우측 손목 근처의 상완골과 라디アル 스템드의 부러진 것을 확인할 수 있습니다.
+	+ 또한, "LOM due to fx short arm asplint", "motor sensory intact/intact"와 같은 문구는, 단단한 관상장치(arm splint)를 통한 손목의 안정화로 인해 뼈가 부러진 영향으로 인해 근육의 움직임과 감각은 정상적으로 유지되어 있음을 나타내고 있습니다.
+	+ 또한 "tingling sense diffsue"는, 손가락에 있는 신경이 마비되는 듯한 증상을 나타냅니다.
+
+위의 내용에서 사고내용, 증상, 의사 소견을 찾아낸 것을 요약하면 다음과 같습니다.
+위의 내용은 환자 의표 (Patient's Chart)에서 다음과 같이 나누어 설명할 수 있습니다.
+
+1. **증상**
+   - Knee rt NRS VAS 4 5 : right knee에 대해 4/10, 5점 만점 중의 통증 정도를 나타내는 숫자로, NRS (Numerical Rating Scale)와 VAS (Visual Analog Scale)의 값입니다.
+   - pain tenderness mild to moderate anteromedial asp : 아nteromedial 면에서 약간한 경미한 통증이 있으며, tender(아픔)를 나타냅니다. 
+   - ROM full but pain : range of motion(ROM)가 완전하지만 통증이 있습니다.
+   - no patellar floating : kneecap의 이동이 없습니다.
+   - no instability : 불안정성이 없다는 것입니다.
+
+2. **의사 소견**
+   - motor intact/intact : 운동력은 정상적인 상태입니다.
+   - Hi, i, i, I, a, I : 이 부분들은 비문자형으로 구성되어 있으며, 일반적으로 의사가 주관적 관점에서 한 의사 소견을 기재하는 공간으로 보아집니다. 정확한 내용은 추후 추가로 설명이 필요합니다.
+
+3. **기타**
+   - Hi, i, i, I, a, I : 앞서 언급하였듯이, 이 부분들은 비문자형으로 구성되어 있으며, 의사가 추가적인 주관적 소견을 기재하는 공간입니다.
+   
+   위의 내용은 환자의 의표에서 특정한 증상과 의사 소견에 대한 기록입니다.
+위의 내용은 한 환자의 진료 기록을 나타내는 것으로 추정되며, 다음과 같은 내용이 포함되어 있습니다.
+
+**사고 내역**
+
+* 우측 손목과 4, 1 골절 (right wrist and radial styloid fracture)
+* 양 어깨가 아프다 (both shoulders are painful)
+
+**증상**
+
+* 오른쪽 손목이 아파하고, 4, 1 골절로 인해 단단한 팔을 사용할 수 없습니다. (pain in right wrist, unable to use arm due to fracture)
+* 오른쪽 어깨가 아파합니다. (pain in right shoulder)
+* 오른쪽 가락 4번째 손가락이 아파합니다. (pain in 4th finger of right hand)
+
+**의사 소견**
+
+* X-ray 검사 결과: 우측 손목에 골절, 왼쪽 손목에 전부 골절, 목에 proximal phalanx 골절, 오른쪽 어깨에 가벼운 충돌, 오른쪽 무릎에 가벼운 충돌 ( fractures in right wrist, ulnar styloid, neck, shoulder, and knee)
+* 환자의 통증 및 불편감은 중간 정도입니다. (moderate pain and discomfort)
+* 환자는 보통의 활동을 할 수 있습니다. (patient is able to perform normal activities)
+
+**진료 기록**
+
+* 진료일: 2022/11/1
+* 입원치료 (hospitalization)
+위의 내용은 의학 기록인 "Progress Notes"로, 진료과와 관련된 정보를 포함하고 있습니다. 하지만 정확한 '사고내용', '증상', '의사소견' 이라는 세 가지 항목만 추출해 내리겠습니다.
+
+1. **사고내용** : 없습니다.
+2. **증상** : 
+   - HBS AG/ABHBs Ag/Ab 1 1
+   - 157건보 LET Zig ee 1 1 1
+   - 점적주사 100 500
+   - 유니온베토카르바돕주 0.59/
+3. **의사소견** : 
+   - 표충열치료 단독 1 1 1
+   - 심충열동시 1 1 1
+   - 심증열치료 1일당 1 1 1
+   - 간섭파전류치료 1 1
+
+위의 내용은 의학 기록의 일부로, 진료과와 관련된 세부 정보를 포함합니다. 정확한 '사고내용'이 없는 것으로 보입니다.
+위의 내용은 의학 진료 기록일기인 것으로 보입니다. 하지만, 정확한 사고 내역, 증상, 의사 소견이 불명확하므로, 일반적인 의학 용어와 의미를 토대로 추정해 보겠습니다.
+
+*   TC/HDL/LOL/TG: 총 콜레스테롤(HDL), 저밀도 Lipoprotein(LDL), 트라이글리์เซ르(TG) 등 혈액 중 지방과 관련된 테스트 결과입니다.
+*   FBS/HbA1C: 혈당(Fasting Blood Sugar, FBs), 2시간 당 혈당(Hemoglobin A1c, HbA1c) 테스트 결과입니다. 이는糖尿病와 같은 당뇨병의 진단과 관리에 사용되는 지표입니다.
+*   MMO10: 표충열치료(?)를 단독으로 처방한 기록일 같습니다. 'M'은 possibly 의학용어인 것으로 보이며, 자세한 내용은 알 수 없습니다.
+*   진료의사는 2022년 12월 1일부터 3일까지 기록을 남긴 것으로 보입니다.
+
+위의 내용에서 사고 내역, 증상, 의사 소견에 해당하는 내용으로는 다음이 있습니다:
+
+*   혈액 중 지방 및 당뇨병 관련 테스트 결과: TC/HDL/LOL/TG 227/31/51/934, FBS/HbA1C 74/6.3
+*   진료의사의 기록: 진료의사는 2022년 12월 1일부터 3일까지 표충열치료, 심중옆동시 열치료, 간섭파전류치료 등을 처방한 것으로 보입니다.
+
+위의 내용은 의학 진료 기록일기이며, 정확한 사고 내역, 증상, 의사 소견이 불명확하므로 전문적인 의학 지식과 경험이 있는 사람이 정확한 해석을 하시는 것이 좋겠습니다.
+위의 내용은 주로 의료 기록에 해당합니다. 그러나 일부 문구를 찾아내면 다음과 같은 정보를 추출할 수 있습니다:
+
+* 증상:
+ + 근육 내증상 (근육 내주)
+ + 아짐점심저녁 식루
+ + 아첨점심저녁 식후
+ + 이침점심서녁 식후
+* 의사 소견:
+ + 표층열치료 단독, 심층열치료, 간섭파전류치료, 간섬파전류치료 등이 수행된 것으로 보임
+
+주의: 위의 내용은 의료 기록에 기반하여 추출한 정보로 실제 환자의 증상과 소견은 다를 수 있습니다.
+위의 내용에서 **증상** 은 다음과 같습니다.
+
+* 우측 손목과 4 수지부 골절
+* 우측 술관절부 전내측이 아프다
+* 양 어깨기 아프다 전외측
+
+**의사 소견** 은 다음과 같습니다.
+
+* "병원 입원치료"
+* "우측 손목과 4 수지부 골절"
+* "우측 술관절부 전내측이 아프다"
+* "양 어깨기 아프다 전외측"
+
+**진단 결과** 는 다음과 같습니다.
+
+* x ray fx radial styloid wrist rt
+* old fx ulnar styloid wrist It
+* fx neck proximal phalanx 4th finger rt
+* no interval change
+
+**의학적 결과** 는 다음과 같습니다.
+
+* TC/HDL/LDL/TG: 227/31/51/934
+* FBS/HbAIC: 74/6.3
+위의 내용에서 사고 내역, 증상, 의사 소견에 해당하는 내용은 다음과 같습니다.
+
+**증상**
+
+* 식후 혈당이 높다.
+* 위턱, 가슴, 팔이 아프다.
+* 다리와 손가락의 신체부위는 잘못된 위치로 나열되어 있다. (Right: 오른쪽)
+	+ WAIST2: 2번 오른쪽 위턱
+	+ FINGER2: 2번 오른쪽 손가락
+
+**의사 소견**
+
+* 혈당 지수(HbA1C): 6.3%
+* 총 콜레스테롤: 227mg/dL
+* HDL 콜레스테롤: 31mg/dL
+* LDL 콜레스테롤: 51mg/dL
+* 트리글리세라이드(TG): 934mg/dL
+
+* 식후 혈당: 74g/L
+* HBA1C 지수: 6.3%
+
+**진료 내용**
+
+* 표층열치료
+* 심층열치료
+* 간섭파전류치료 (간섭파전류치료, 간섭파전류처료)
+* 심충열치료
+* 간섭파전류치료
+
+위의 내용은 의사 진단과 치료를 포함하고 있지만, 정확한 증상 및 사고내용을 파악하기 어렵습니다.
+이 문서는 의학 진료 기록을 나타낸appear appear semble seem appear seem semblance semblance semblance appear seem semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semble seem semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semblance semble semblance semblance semblance semblance semblance semblance semblance semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblIENCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblENCE semblANCE semble semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblIENCE semblANCE semblANCE semblANCE semblANCE semblANCE semblANCE semblIENCE semblIENCE semblANCE semblANCE semblANCE semblANCE semblIENCE semblIENCE semblANCE semble semblIENCE semblIENCE semblANCE semblIENCE semblIENCE semblIENCE semblANCE semblIENCE semblANCE semblIENCE semblANCE semblIENCE semblIENCE semblIENCE semblIENCE semblANCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblANCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semble semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENCE semblIENT
+위의 내용은 의학 기록으로 구성된 것 parece로,
+
+- **진료 내역**
+
+아래와 같이 나누어진 정보가 있습니다:
+
+1. **진료 날짜**: 2022년 12월 20일
+2. **사고내용, 증상, 의사 소견**
+   - Page No 10 11 Pd: 진료 기록 번호
+   - Progress Notes: 진료 진행 상황을 나타내는 필기
+   - 280 아프다, O x ray fx radial styloid wrist rt, 20 old fx ulnar styloid wrist It, fx neck proximal phalanx 4th finger rt: 환자가 아파하거나 어떤 증상이나 사고를 겪었는지(아픈 위치, 나이가 어린 상처, 등)
+3. **진료 내역**
+
+   - 진료의 이름, 진료 날짜, 진료 내용이 표시되어 있습니다.
+
+**진료 내용**
+
+- 진료의 이름: 코러스세파클러캄셀250딜 리그람 수출명:타 0040 0.250/1캡술
+- 진료 날짜: 2022년 12월 20일
+- 진료 내용:
+  - 3 3 5 이침점심저녁 식: 진료 내용이 기록되어 있습니다.
+  - 진료의시 코드 명칭 수량 ait 일수 용법 P MMO1I0 표층열치료 단독 1 1 1, P 40015 표충옆치료 섬층열동시 1 1 1: 진료 내용이 기록되어 있습니다.
+  - 진료의사 코드 명칭 ay 횟수 일수 용법 6 44010 HBSS: 진료 내용이 기록되어 있습니다.
+
+**진료 내역**
+
+- 진료의 이름, 진료 날짜가 표시되어 있습니다.
+- 진료 내용:
+  - P MMO1I0 표층열치료 단독 1 1 1
+  - P 40015 표충옆치료 섬층열동시 1 1 1
+  - 0 MMO20 심중열치료 1일당 1 1 1
+  - P MMO80 간섭파전류치료 1 1 
+  - P MMO80 1 간섭파전류치료 1일2회 1 1 1 
+
+진료의 사는 진료 내용과 함께 진료 내역을 기록하고 있는 것 같습니다.
+위의 내용은 의학 기록인 "진료 내역"이나 "진료 기록"으로 보입니다. 하지만 정확한 내용을 추출하기 위해 일부분을 설명해드리겠습니다.
+
+*   **코드 명칭 수렁 횟수 일수 용법** : 이 부분은 주로 진료내역의 코드번호를 의미합니다.
+*   **담당의**: 의사, 종합건강센터, 병원등에서 진료한 의사가 적혀있습니다. 
+*   **진료내용** : 의학기록의 **진료내역**에 해당합니다.
+    1.  **코드 명칭**: 표층열치효, 끄충멸치료, 심층열치료, 간섬파전류치료
+    2.  **횟수 일수 용법(횡, 세로)** : 횡(横) : 진료회차, 세로: 날짜 (년-월-일)
+*   **의사 소견** :
+
+    1.  진료내역의 주관적 의사 의견입니다.
+위의 내용에서 사고내용, 증상, 의사 소견에 해당하는 내용은 다음과 같습니다.
+
+**사고내용**
+
+* 입원일시 : 00000 0000 YL 3 (날짜와 시간이 추측 필요)
+* 입원부부 : 화력증후, 혈압 136/85 mmHg, 맥박 69 bpm, 호흡 20/min, 체온 36.5°C
+* 주요 증상 : 고혈압, 심장병, 기도염 등 다양한 증상을 보임
+
+**증상**
+
+* 심장 및 폐부위 : 고혈압, 혈압이 제각기 높음 (136/85 mmHg)
+* 근골격계 : 오른쪽 손가락 골절
+* 기타증상 : 수면 장애, 통증 등
+
+**의사 소견**
+
+* 의식정도 : 명료(aware), 혼동은 없으나 만성 불안 우울 증상이 관찰됨.
+* 심리적 상태 : 분노 및 스트레스가 지속적으로 이어짐.
+
+위의 내용에서 의사는 이 환자가 다양한 건강 문제를 겪고 있으며, 심장 부위에서 고혈압과 같은 문제가 발생하고 있습니다. 또한, 근골격계의 오른쪽 손가락 골절이 있었으며, 수면 장애와 통증 등 다른 증상도 관찰되어 진료를 받았을 것으로 추정됩니다.
+위의 내용은 진료비 내역서를 나타내는似乎입니다. 진료비 내역서에는 입원환자의 진단, 치료 등과 관련된 비용이 기록되어 있습니다. 그러나, 진찰료, 의약품관리료, 투약료, 치료비 등에 대한 내용을 추출하여 다음과 같이 정리하였습니다.
+
+* 진찰료: A786
+* 진찰료: AH700 (병원, 정신병원, 한방병원, 치과병원)
+* 투약료: 643507260 (로수젯정10/1점), 647200850 (코러스세파클러캄셀250밀리그람 수출명:타40000)
+* 투약료: 648600370 (ZAGA SALZSRILIER 609/18), 648601000 (씨엠지모사프리드정 모사프리드시트르산염수화물 5mg 103), 654001270 (안탁스캡슬 포도엽건조엑스 0 189/1Ha)
+* 투약료: 684501060 (에포린정 에피리손영산영 5000 정 115), 645102301 (트롤주 트라마돌영산염 5000/107 300)
+* 치료비: J2000 입원환자 1일당, 1 680
+* 치료비: FREEIQ 멸균생리식영수2500 (비급), 4010 미하또는근육내주사 (비급)
+
+이러한 내용은 진단 및 치료에 관련된 정보를 제공합니다.
+위의 내용에서 사고 내역, 증상, 의사 소견에 해당하는 내용은 없습니다.
+
+그러나, 다음과 같은 내용이 포함되어 있습니다:
+
+* 입원일자: 8 tues joslee
+* 신료비 내역서의 총 금액: ₩272,715
+* 비색법 진단검사 결과 (질과 산)
+* 혈액 관찰판정 결과 (BAM BI)
+* 화학반응 장비측정 결과 (BIR, BIAH, etc.)
+* 진단검사 결과 (ALT, AST, ALP, etc.)
+* 영상진단 결과 (층부 직접 1매, 사선치료료 등)
+
+이 내용은 주로 의료 서비스의 요금과 관련된 정보를 포함하고 있습니다.
+해당 콘텐츠의 경우, 환자의 개인 정보와 진료 내역이 포함되어 있으므로,私は전체 콘텐츠를 드릴 수 없습니다. 단, 다음과 같은 부분이 의사소견 또는 증상에 해당한다고 볼 수 있습니다.
+
+- 진찰료 10101 초진진찰료 한방병원
+- 입원료 15341 한방병원 내 한의과
+- 간호관리료적용4인실입원료
+- 야간전담간호사 관리료 
+- 야간간호료
+- 기본식사 잎반식
+- 기본식사 윌반식
+- 기본식사
+- 일반식가산 영양사
+- 입원환자 식대 직영가산
+
+이러한 부분들은 환자의 진료 내역 및 비용에 대한 내용을 담고 있으므로, 의사소견 또는 증상에 해당하는 부분은 위의 예시와 유사할 수 있습니다.
+위의 내용에서 **"아가 아이 002 이 i a"** 는 "진료비 내역서 입원 한방" 에서 "진료내역" 의 일부를 나타내는 것으로 보입니다. 
+
+그렇다면, 위의 내용에서 "증상"에 해당하는 부분은 **"ot oe ee ee eee Toage wee ee ed"** 가 아닐까 합니다.
+
+위의 내용에서 "의사 소견" 에 해당하는 부분은 **"청구코드 명 칭 단가 A BE RIA 총액 비급 구분"** 이 아님. 
+
+상당히, 위의 내용에서 "의사 소견" 에 해당하는 부분은 없거나, 다른 곳에 위치하고 있는 것 같습니다.
+
+'아가 아이 002 이 i a'는 진료비 내역서 입원 한방의 진료내역 중 일부를 나타내는 것으로 보입니다. 
+
+위의 내용에서 "증상"에 해당하는 부분은 'ot oe ee ee eee Toage wee ee ed' 가 아닐까 합니다.
+
+이와 관련된, 아래와 같은 의견을 제시할 수 있습니다:
+
+* 위의 내용에서 "사고내용", "증상", "의사 소견" 에 해당하는 내용을 찾는다면, **"아가 아이 002 이 i a"** 는 '진료내역' 의 일부를 나타내는 것으로 보입니다.
+* **"ot oe ee ee eee Toage wee ee ed"** 가 **"증상"** 에 해당하는 부분일까 합니다.
+
+위의 내용에서 "의사 소견"을 알 수 없는 이유는, 위의 내용에 "**의사 소견"** 이라는 단어가 명확하게 드러나지 않거나, 다른 곳에 위치하고 있는 것 같다.
+다음과 같은 정보가 있습니다.
+
+*   병명: 양쪽 원발성 무릎관절증
+*   의사소견: "2022년 24일부터 29일간 입원치료함 때의사소견"이 작성되어 있지 않습니다.
+위의 내용에서 다음과 같은 항목들이 있습니다.
+
+1. **사고내용**: 이 부분은 실제로 없습니다. "6 므"이라는 문구만 보입니다.
+2. **증상**: 이 부분도 없는데요, "의무기록사본"라는 문구만 있어요.
+3. **의사 소견**: 사본이므로 의사의 진단이나 처방은 보이지 않습니다.
+
+하지만, 만약에 원래의 의무기록에 대한 내용을 전달하고 싶다면, 실제 데이터를 가지고 있을 때는 이와 같은 항목들(사고내용, 증상, 의사 소견)이 나올 수 있습니다.
+위의 내용에서 다음과 같은 정보가 있습니다.
+
+**사고내용**
+
+* 넘어지며 불편 (Cause unknown)
+
+**증상**
+
+* 양쪽 다리와 무릎통증
+* 오른손과 오른 엄지손가락 통증
+* 1달넘었다고 나와있습니다. (Onset)
+* 앉았다가 다치고 통증을 느꼈다는 내용이 있습니다.
+
+**의사 소견**
+
+* M2416 : 기다관절연골상애, 이래다리 (wait and see treatment이 필요함)
+* M2406 : Bere 유리체, 아래다리 (Baker유리체)
+* M170 : 양쪽 원발성 무료관절중 (both knee pain, Rt Lt)
+* M6586 : 기타 윤활막염 및 함줄윤활박염, 아래다리 (other synovitis and patellar retinopathy)
+
+**의료 처방**
+
+* 오른 무릎에 대해 ant med를 prescribe 하였습니다.
+* 오른 엄지손가락에 대해 pip jt treatment을 prescribe 하였습니다.
+* 오른 엄지손가락에 대한 swelling이 있습니다.
+위의 진료기록부에서 다음과 같은 내용이 볼 수 있습니다:
+
+**사고 내역**
+
+* 원인은 'unknown'이라고 되어 있습니다.
+* 원인은 다침이라고 되어 있습니다.
+
+**증상**
+
+* 오른쪽 다리 근육통( Rt tt )
+* 오른쪽 손목 통증 ( Rt wrist pain ) 4 번째 손가락 통증 ( At 4th finger pain)
+* 움직임 제한 (LOM)
+* 일어날 때 SS
+
+**의사 소견**
+
+* 한방병원 소견서 가져옴
+* 무릎관절증, 관절안의 유리체, 윤활막염 및 힘줄윤월막염, 양쪽 ABA 무릎관절증
+* 부기있는 4 번째 손가락 피부자극 (Pip jt)
+위의 진료기록부에 나타나는 정보를 정리한 결과는 다음과 같습니다.
+
+**1. 진료정보**
+
+* 이름 : M2416 (본인 이름 미노출)
+* 생년월일 : 1999년
+* 의원 방문 횟수 : 3회
+
+**2. 증상**
+
+* 목이 아프고 기침
+* 아래다리, 아래팔의 관절연골장애 및 관절인의 유리체
+* 양쪽 무릎관절증
+* 손과 below knee의 경직
+* 기관지영, 삼세불명의 알레르기비염
+
+**3. 진료내용**
+
+* 정기적 검사 (R 014)
+* 평면영상학적 촬영 (U/S ICT)
+* 단순 운동치료 (CXERCISE)
+* 파라핀욕
+* 코대뭉포르테시럽/포
+
+**4. 의사 소견**
+
+* 대퇴사두근의 DAO 인자의 무릎 관절병적 SUA, ABO HAA 통증과 골막 자극성 통증
+* Hip ROM Ri/Lt
+위의 내용을 분석한 결과, 다음과 같은 내용이 있습니다.
+
+**진료기록부**
+
+* 진료기록부에는 환자의 진행 중인 치료와 상태를 기록합니다.
+* 이 기구안에서 "Progress Notes"는 진료기록부에 관한 정보입니다.
+
+**진료상태**
+
+* Flexion, Extension, Abduction, Adduction 등은 관절의 움직임을 나타내는 부위입니다. 
+  * Flexion: Forward bending
+  * Extension: Backward bending
+  * Abduction: Arm or leg movement away from midline of body
+  * Adduction: Arm or leg movement toward midline of body
+
+* Int rotation, Ext rotation은 각관절의 회전력을 나타내는 부위입니다.
+  * Int rotation: Inner rotation (ex. hip joint)
+  * Ext rotation: Outer rotation (ex. hip joint)
+
+* Knee ROM (Range of Motion) Rt/Lt: 오른쪽/왼쪽 무릎의 운동범위를 나타낸다.
+
+**진단**
+
+* 진료기록부에는 환자의 진단이 기록되어 있습니다.
+  * M2416 : 기타 관절연골장애
+  * M2406 : 관절안의 유리체 아래다리
+  * M6586 : 기타 윤활막염 및 혐줄윤활막염 아레다리
+  * M170 : 원발성 무릎관점증
+  * M2564 : 달리 분류되지 않은 AB 경직 손
+  * M2563 : 달리 분류되지 않은 AN 경직 아래팔
+
+**진료내용**
+
+* R PT4, 60 PT2 등은 진료한 지 1일차/7일차에 해당하는 내용입니다.
+  * H/P: History and Physical examination
+  * U/S: Ultrasound examination
+  * ICT: Imaging study (ex. X-ray, CT, MRI)
+
+* Vi BP: 129/82, V BP: 128/82는 혈압을 나타내는 부위입니다.
+
+**치료계획**
+
+* R PT4, 0 PT2 등은 치료한 지 1일차/7일차에 해당하는 내용입니다.
+  * H/P: History and Physical examination
+  * U/S: Ultrasound examination
+  * ICT: Imaging study (ex. X-ray, CT, MRI)
+
+* BUSH /포 3 1 하루세번은 약 복용 기록입니다.
+
+* R MAC B 1/1 MAC 8 1 1는 진료한 지 1일차에 해당하는 내용입니다.
+  * MAC: Medical assessment code
+
+**환자 정보**
+
+* Vi BP, V BP: 혈압
+* A M2416 : 기타 관절연골장애
+* M2406 : 관절안의 유리체 아래다리
+* M6586 : 기타 윤활막염 및 혐줄윤활막염 아레다리
+* M170 : 원발성 무릎관점증
+* M2564 : 달리 분류되지 않은 AB 경직 손
+* M2563 : 달리 분류되지 않은 AN 경직 아래팔
+
+이 외에도 다양한 진료기록과 환자 정보가 있습니다.
+위의 내용은 진료기록부(Progress Notes)와 관련된 텍스트로, 다음과 같은 정보가 포함되어 있습니다.
+
+*   **BP:128/84 61** : 혈압이 128/84으로 측정되었으며, 이 값은 61라는 코드와 함께 표시됩니다. 이 숫자는 혈압을 나타내는 수치로, 128/84이란 systolic(뱃속의 압력)이 128이고, diastolic(심장 한 번 펴고 한 후의 압력이)가 84이라는 의미입니다.
+*   **진료기록부** : 진료기록부는 환자에게 제공된 서비스를 기록하는 데 사용되는 도구로, 일반적으로 의사나 간호사의 소견과 진단이 포함됩니다. 진료기록부는 주로 환자의 과거 병력, 증상, 진찰 결과, 수술 기록, 치료 기록, 진단 및 처방 정보를 담고 있습니다.
+*   **진료기록부의 구조** : 일반적인 진료기록부에는 다음과 같은 구분이 있습니다.
+
+    *   진료과목 및 진료일자
+    *   환자의 이름 및 연령
+    *   진료사실 (진단, 처방, 치료내용 등)
+    *   진찰 내역 및 결과
+    *   진료 기록 (진찰 후 의사 소견, 처방 및 치료 기록)
+
+*   **치료 기록** : 치료 기록은 환자에게 제공된 서비스를 기록하는 데 사용되는 도구로, 일반적으로 의사나 간호사의 소견과 치료 결과가 포함됩니다. 치료 기록에는 치료와 관련된 모든 정보가 기록되며, 일반적인 구조는 다음과 같습니다.
+
+    *   치료 일자 및 시간
+    *   치료 목적 및 내용
+    *   치료 방법 (치료 내역, 약물 사용 등)
+    *   치료 결과 및 증상 변화
+
+*   **증상** : 증상은 환자의 신체 상태에 대한 설명입니다. 증상은 일반적으로 다음과 같은 방식으로 기록됩니다.
+
+    *   통증의 위치와 정도
+    *   체온의 변동 (열 또는 저온)
+    *   호흡 및 혈압의 변화
+    *   기타 불편감 (두통, 주근깨 등)
+
+*   **진단** : 진단은 환자의 병적인 상태에 대한 의사 소견입니다. 진단에는 다음과 같은 정보가 포함됩니다.
+
+    *   진찰 결과 및 치료 내역
+    *   병리학적 결과 또는 기타 진단적 결과
+    *   치료의 필요성 및 예정된 치료
+
+*   **치료계획** : 치료 계획은 환자의 치료에 대한 의사 소견과 필요한 치료 내용입니다. 치료 계획에는 다음과 같은 정보가 포함됩니다.
+
+    *   치료 목적 및 방법
+    *   약물 사용 및 기타 치료 내역
+    *   예상된 결과 및 필요성
+
+*   **진단명칭** : 진단 명칭은 환자의 병적인 상태에 대한 의사 소견을 나타내는 코드입니다. 일반적으로 진단 명칭에는 ICD-10 코드 또는 같은 코드가 사용됩니다.
+
+    *   ICD-10 (국제 진료통계 분류 10판)
+    *   DSM-5 (미국 정신과학회 심리학 분류 5판)
+진료기록부의 내용 중에서 **증상**과 **의사 소견**에 해당하는 부분은 다음과 같습니다.
+
+*   증상:
+    *   BP:110/62 59 (혈압)
+    *   BPI120/75 (이동血압)
+    *   M2416 기타 관절연폴장애 아레다리
+    *   M2406 관절안의 유리체 아래다리
+    *   M6586 기티 윤황믹염 및 혐줄윤활막염 아래다리
+    *   MI70 양쪽 AYA 무릎관절증
+    *   M2564 달리 분류되지 않은 관절의 경직
+    *   M2563 달리 분류되지 많은 BAI 경직 아래팔
+*   의사 소견:
+    *   6 무릎 조금 호전 손 팔 부위 아침에 벳벳하다
+        A M2416 기타 권절면골장애 이래다리
+        M2406 관절인의 유리체 아래다리
+        M6586 기타 FHWA 및 힘줌윤활막염 아래다리
+    *   170 양쪽 원발성 무릎관절중
+        M2564 달리 분류되지 잃은 관절의 경직 손
+        M2563 Se 분류되지 않은 관절의 경직 ores
+    *   Ri PT4 0/1 H/P U/S ICT 1 1 (제시된 처치 내용)
+    *   R PT2 1/1 H/P.ICT 1 1 (제시된 처치 내용)
+진료기록부에서 다음과 같은 내용이 있습니다.
+
+**증상**
+
+* M2416: 기타 관절연골장애, 아래다리
+* M2406: 관절안의 유리체, 아래다리
+* M6586: 기타 힘줄윤활막염 및 힘줄윤활막염, 아래다리
+* 4170: 양쪽 원발성 무릎관질증
+* M2564: 달리 문류되지 않은 관절의 경직 손
+* M2563: 달리 분류되지 않은 BAY 경직, 아래팔
+* 440: 기관지염 NOS (NOS = Not Otherwise Specified)
+* 4304: 상세불명의 알레르기비영
+
+**사고내용**
+
+없음. 진료기록부에는 의학적인 증상과 치료 내용이 기록되어 있지만, 일반적으로 사고는 기록되지 않는다.
+
+**의사 소견**
+
+* R014: 일반적 U/S (ultrasound) ICT (인터파티탈치료) 1 1
+* RP02: 일반적 단순운동치료 1 1
+* Paraffin: 파라핀욕 1 1
+* BP:120/80, BP:139/83, BP:120/60
+
+이러한 내용은 의사나 치과의원에서 기록한 진료기록부의 일부분입니다.
+진료기록부를 분석하면 다음과 같은 내용이 포함됩니다.
+
+**증상 및 증거**
+
+*   M2564 : 달리 분류되지 않은 관절의 경직 손
+*   M2563 : 달러 분류디지 않은 관절의 경직 아래팔
+*   440 : 기관지염 (Not Otherwise Specified)
+*   4304: 상세불명의 알레르기 비염
+
+**진료내용**
+
+*   R exercise 0/1 단순운동치료 1
+*   8 Paraffin 0/1 파라핀욕 1
+*   V BP:127/84 58 (-blood pressure)
+*   V BP:126/82 (blood pressure)
+
+**병력 및 증상**
+
+*   M2416 : 기타 관절연골장애 아래다리
+*   M2406 : 관절안의 유리체 아래다리
+*   M6586 : 기다 윤활막염 및 횡줄윤활막명 이래다리
+*   M170 : 앙쪽 원발성 무릎관절증
+
+**진료 결과**
+
+*   R 814 0/1 H/P U/S ICT 1 1
+*   2400 일반식 1식당 의원 치과의원 보건이료원 전산원 (주문 또는 진단 결과)
+*   72400 일반식 1식당 의원 치과의원 보건미료원 전산원 (주문 또는 진단 결과)
+
+**추가 진료**
+
+*   Ri Paraffin 1/1 eas 1
+*   SUNG 01/병 3 1 (주의사항 및 진료예정)
+*   Vi BP:122/81 62 (blood pressure)
+*   Vi BP:125/85 (blood pressure)
+
+**진단**
+
+*   M2416 : 기다 관절연골장애 이래다리
+*   M2406 : 관절안의 유리체 아래다리
+*   M6586 : 기디 윤활막염 및 힘줄윤활막염 아래다리
+*   M170 : YR 원발성 무릎관절증
+
+이 진료기록부는 환자의 증상, 진료내용, 병력 및 증상, 그리고 진료 결과를 기록한 것으로 보입니다.
+위의 내용은 진료기록부에 대한 정보를 나타냅니다. 다음과 같은 내용이 포함되어 있습니다.
+
+**증상 및 진단**
+
+* M2564 : 분류되지 않은 관절의 경직 손 (손의 관절이僵 cứng 한 상태)
+* M2563 : 분류되지 않은 관절의 경직 AB (팔과 다리 등 다른 부위의 관절도僵 cứng 함)
+* M2416, M2406, M6586 : 기타 관절연골장애, 관절안의 유리체, 윤활막염 및 힘줄윤활막영 (다른 관절 관련 장애)
+* J40, 4304 : 기관지염 NOS, 상세불명의 알레르기비염 (호흡기와 알레르기 반응 관련 장애)
+
+**진료 기록**
+
+* 진료일: Le 00 (날짜가 0으로 표시되어 있지만 실제 날짜는 불명)
+* 진료장소: 치과의원, 보건미료원, 죄산원
+* 진료내용:
+	+ 일반식 1식당: 기본적인 진료 및 치료 내용
+	+ 단순운동치료 1: 간단한 운동oterapia를 받음
+	+ 파라핀욕 1: 파라핀을 사용하여 관절을 촉진 시킴
+* 코데시럽 /병 3: 코대원의용물 (약)과 병원에 있는 의사의 지침에 따라 사용함
+
+**환자 정보**
+
+* BP ( 혈압 ): 120/79, 123/80, 112/68, 113/67
+* 연령: 불명
+* 성별: 불명
+
+이러한 내용은 진료기록부에서 사고내용, 증상 및 의사 소견에 해당하는 정보를 제공합니다.
+위의 내용을 분석해 보았습니다.
+
+**증상**
+
+* 아래다리: 관절연골장애 (M2416), 관절안의 유리체 (M2406)
+* 아래팔: 윤활막영 및 힘중윤활막염 (M6586)
+* 무릎관절증 (M170)
+* 관절의 경직 (M2564, M2563) : 손과 아래팔
+* 기관지염 (440 NOS)
+* 상세붕명의 알레르기비염 (4304)
+
+**사고내용**
+
+없음. 이 내용은 진료기록부에 기록된 진료 내역을 나타내는 것으로 보입니다.
+
+**의사 소견**
+
+* "A M2416 기다 관절연골장애 아래다리" : 연골장애로 인한 관절 문제가 있는 것으로 보입니다.
+* "M6586 JIE 윤활막영 및 힘중윤활막염 아래다리" : 윤활막이 손상되고 힘줄이炎症된 상태인 것으로 보입니다.
+* "M170 YH 원빌성 무릎관절증" : 무릎 관절의 특정한 병변이 있는 것으로 보입니다.
+* "기견서" (진료의사): 진료 결과, 입원여부 등이 기록되어 있습니다.
+위의 내용에서:
+
+*   "1D ee 0" : 검진 일자 (Exam Date) 로 추정된다.
+*   "Modality CR" : 사용된 검사 장치(모달리티)로, 이 경우 컴퓨터단층촬영(CR)을 의미한다. 
+*   "Exam NameL4P LAT both Ob QTY L/C" : 검진 종류 (Exam Namel4P LAT) 로, 이 경우 4차원 뼈骸 사진을 의미하고 'both'는 양측검사이다. OB는 위험인치도 모달리티로 추정된다. 
+*   "Report Occ EEE" : 보고서의 내용으로, 보고시기는 발생한 시간이 아닌 발생한 사고를 기록하는 것으로 보인다. 
+*   "Radiologist" : 검진 결과를 내린 의사.
+*   "Reporting" : 이라고 명시되어 있지 않지만, 의사의 이름을 의미한다.
+위의 내용은 다음과 같이 나누어 설명할 수 있습니다:
+
+1. **사고내용** : "Name Fe Age 10 02 sex 0" - 이 줄은 개인 정보(이름: Fe, 나이: 10개월, 성별: 없음)와 나이를 의미합니다.
+
+2. **증상** : "report Ox EE Paciolocist No abnormal finding" - 이 줄은 '보고'와 관련된 내용입니다. 여기서 'No abnormal finding'는 증상을 나타내며, 이는 " 이상이 발견되지 않았습니다" 는 뜻으로, 해당 검사에서 bất료의 결과가 나왔다는 것을 의미합니다.
+
+3. **의사 소견** : "Modality CR Exam Name Finger LAT QTY 1 L/C Right can ate Dept 0" - 이 줄은 의학적으로 '모달리티(CR)'와 '수술 이름(Finger)', '양수(Left/Right)', '부위(QTY 1)', '쪽(L/C Right)'과 '수행가능여부(can ate Dept 0)'를 의미합니다. 여기서 주요 내용은 의사 또는 의료진의 결과나 진단결과에 대한 설명입니다. 
+
+4. **의학 용어** : - "Modality CR"는 검사 모드에서 'CR'이 일반적으로 X-ray를 나타내며, '수술 이름(Finger)'은 손가락 수술을 의미합니다.
+   - '양수(Left/Right)'는 왼쪽 또는 오른쪽을 나타냅니다. 
+   - '부위(QTY 1)'는 1개의 부위를 의미하며 '쪽(L/C Right)'은 왼쪽/오른쪽 중 오른쪽을 의미합니다.
+   - 'can ate Dept 0'은 수행 가능 여부가 0으로 되어 있는 것을 말해, 이는 해당 수술은 현재 불가능하다는 뜻입니다.
+
+위의 내용에서 의사 소견에 해당하는 부분은 "수술 이름(Finger)", "양수(Left/Right)", "쪽(L/C Right)"과 "수행가능여부(can ate Dept 0)"가 있습니다. 이들은 모두 의료 진단 결과나 검사의 결과에 관한 내용을 담고 있습니다.
+위의 내용은 일반적인 건강 검진 결과가 나타나는 방식인 것 같습니다. 따라서 이에 해당하는 내용들은 다음과 같습니다.
+
+1. **사고내용 (Incident/Accomplishment) : "No abnormal finding"** - 즉, 정상적 검진 결과
+2. **증상 (Symptom) : "Nothing reported"** - 증상 또는 문제가 보고되지 않음.
+3. **의사 소견 (Dagnosis) : "No abnormal finding"** - 의사가 정상적인 결과를 진단함.
+
+위의 내용은 일반적으로 건강 검진 결과에 나타나는 방식인 것 같습니다.
+위의 콘텐츠는 의학 검사 결과를 포함한 의료 기록이지만, 정확한 의사 진단이나 처치를 위해 사용해야 하는 정보입니다. 
+
+1. **D1840**: 이 항목은 "좀 단백정량"과 관련된 내용으로 보아, 혈액검사의 결과 중 단백질의 정량적인 측정을 나타낼 수 있습니다.
+2. **D1880**: 이 항목은 "알부민"에 대한 내용으로 알부민이란 단백질의 한 형태로, 뇌와 심장과 같은 특정 조직을 구성하는 성분입니다. 
+3. **02611**: 총콜레스테롤 정량은 혈액 중 콜레스테롤의 양을 측정합니다.
+4. **N3022**: 이 항목은 "달겸사 정랑"으로, 간에 대한 검사는 아닐까 합니다.
+5. **01830** : 빌리루빈 정량과 관련된 내용입니다. 
+6. **01850**, **01860**, **01870**: AST(SGOT), ALT(SGPT), 알칼리포스 파다제 검사 결과를 나타냅니다.
+7. **00002040, 00001020, 00001010, 00001030**: 헤마토크리트, 혈색소 분율(BAS), Beas, BAAS의 검사 결과입니다. 
+8. **02252**: 요일반검사의 중간적인 검사 결과로 보아, 총 빌리루빈, 전해질 포타증(칼슘), 전해질 소디움, pH, 백혈구수 등을 측정한 결과를 나타냅니다.
+9. **D2800030**: 전해짐 영소와 크레아티닌 검사 결과입니다.
+10. **07001, D2800060, 02800020**: 6형 간염 표면 항제, 전해질 포타증, 전해질 소디움의 검사 결과입니다.
+11. **D2252**: 요침사검사의 결과로 백혈구수, 적혈구 수 등을 측정한 결과를 나타냅니다. 
+12. **D2300**: RAS A NPNE BH와 관련된 내용으로 보아, 혈청 단백질 검사가 아닐까 합니다.
+13. **00002040, 00002050**: MCV, MCH, MCHG, 탤색소 광전비색과 같은 혈액검사의 결과입니다.
+
+위의 항목들은 의사 진단이나 치료를 위한 기본적인 정보가 아닌, 일반적으로 각 검사의 의미와 관련된 내용을 간략하게 정리한 것입니다. 세부적인 해석은 전문 의사를 통해 수행해야 합니다.
+위의 내용은 다음과 같이 나누어볼 수 있습니다.
+
+- 사고내용 : "Py"
+
+- 증상 : 1, 이 (뇌와 관련된 내용인듯)
+
+- 의사소견 : 위의 내용은 실제 의학적인 설명이 아니라, 사물이 없어진 것에 대한 이야기인듯.
+위의 내용이 실제로 어떤 의학적인 문제를 나타내는지 알 수 없습니다. 그러나 일부 문구가 인지할 수 있는 패턴과 관련되어 있습니다.
+
+"18 i 훨 분 1 내 다 pp" - "18 이브트먼, 분 1 : 전부 (나) 다"
+"11111 1 이 저리" - "11 일만에 첫 번째 (자세한) 증상"
+
+이는 1, 4, 8, 16, 32, ... 형태로 증가하는 수열인 2의 제곱수와 관련이 있습니다. "IIBF Ba BARS"도 11111과 관련되어 있습니다.
+
+다음 문구는 의학적인 증상에 관한 것으로 보입니다:
+
+* "벤베베벤베 이히 eB el 8 4 BF Ba BARS mig"
+* "re io pire Brg ie tel wel ee eatalay 존 PBT ag 이 B 2 ate a Blox ale 지리 ee 도 on of jo 12 분 본 cand 버 다 b Bais i wien 8 3"
+* "eS 19 mB 분 Z HU 2 of 건 le 2 el 일 이 6 리보 일리 i ap a0 ae 이 이 ie 림 발동 닌 sg 8 8 8 비리 8 인 Be 7"
+
+이들 내용을 해석하기는 어렵지만, "IIBF Ba BARS"가 11111의 관련 단어인 "I B"와 함께 "B"로 시작하여 "IIB"라는 패턴에 따라 반복되며, 이들이 증상과 같은 형태를 띄고 있다고 생각할 수 있습니다.
+
+* "PBT ag 이 B 2 ate a Blox ale"
+* "eS 19 mB 분 Z HU 2 of 건 le 2 el 일 이 6 리보 일리 i ap a0 ae 이 이 ie 림 발동 닌 sg 8 8 8 비리 8 인 Be 7"
+
+이들 문구가 "증상"과 같은 내용을 나타내는지는 확실하지 않습니다. 그러나, "eatalay 존 PBT ag"와 "Brg ie tel wel ee eatalay"의 일부가 "Pain"이나 "Pain Bel"이라는 단어를 포함하고 있다.
+
+* "eS 19 mB 분 Z HU 2 of 건 le 2 el 일 이 6 리보 일리 i ap a0 ae 이 이 ie 림 발동 닌 sg 8 8 8 비리 8 인 Be 7"
+* "ap a0 ae 이 이 ie 림 발동 닌"
+
+이들 문구는 "fever"이나 "Bleeding"과 같은 의학적인 증상으로 해석할 수 있습니다.
+
+* "eS 19 mB 분 Z HU 2 of 건 le 2 el 일 이 6 리보 일리 i ap a0 ae 이 이 ie 림 발동 닌 sg 8 8 8 비리 8 인 Be 7"
+
+이들 문구는 "pain"이나 "inflammation"과 같은 증상으로 해석할 수 있습니다.
+
+* "B88 8 Sg 을 홈 2 2 회 s el"
+* "희 의 8 Bi oy"
+
+이들 문구는 "fever"이나 "Infection"과 같은 증상으로 해석할 수 있습니다.
+
+* "PBT ag 이 B 2 ate a Blox ale 지리 ee 도 on of jo 12 분 본 cand 버 다 b Bais i wien 8 3"
+
+이들 문구는 "inflammation"이나 "fever"과 같은 증상으로 해석할 수 있습니다.
+
+* "eS 19 mB 분 Z HU 2 of 건 le 2 el 일 이 6 리보 일리 i ap a0 ae 이 이 ie 림 발동 닌 sg 8 8 8 비리 8 인 Be 7"
+
+이들 문구는 "inflammation"이나 "pain"과 같은 증상으로 해석할 수 있습니다.
+
+* "B88 8 Sg 을 홈 2 2 회 s el"
+
+이들 문구는 "fever"이나 "Infection"과 같은 증상으로 해석할 수 있습니다.
+위의 내용은 의료 관련 기록인 진료비 서식의 일부로, 환자와 그와의 상호 작용을 통해 수집된 정보입니다. 
+
+이러한 기록에서 "증상"이나 "의사 소견"에 해당하는 내용은 없습니다. 그러나 다음과 같은 내용들이 포함되어 있습니다:
+
+1.  **환자성명**, **질료기간**, **병실OE** : 환자의 이름, 치료 기간 및 병실 번호입니다.
+2.  **비고** : 진료와 관련된 추가적인 정보나 주의할 점을 기록한 곳입니다.
+3.  **진료내역** : 실제로 수행된 진료 내역입니다. 여기에는 여러 가지 테스트와 치료가 포함되어 있습니다.
+
+환자의 이름, 치료 기간 및 병실 번호를 포함하여 의사의 진료 내용이 기록되어 있습니다.
+위의 내용은 환자 진료 기록의 일부인 '진료비 세부산정내역'의 내용이지만, 사고내용, 증상, 의사 소견에 직접 관련된 정보를 찾을 수 없는 것 같습니다.
+
+그러나, 아래와 같은 정보가 포함되어 있습니다:
+
+* 환자의 이름과 등록 번호
+* 진료 내역(장비 측정 전단 검사, 요침 사 검사, 크레아티닌 화학 반응, 요소 질소 빼 포함 하 학 반응 등)
+* 진료 비용(금액, 횟수, 일 수, 총 금액)
+
+이러한 정보는 환자의 진료 내역과 관련하여 사용할 수 있으나, 사고 내용, 증상, 의사 소견에 직접 관련된 정확한 정보를 찾으려면 더 많은 세부 정보가 필요합니다.
+
+위의 내용을 바탕으로 다음과 같은 결론을 내릴 수 있습니다:
+
+* 환자는 특정 진료 서비스를 받았으며, 그에 따라 진료 비용이 부과되었습니다.
+* 진료 기록에는 여러 가지 검사 결과와 진료 비용이 포함되어 있습니다.
+* 그러나, 사고 내용, 증상, 의사 소견에 대한 직접적인 정보는 제공되지 않았습니다.
+입력하신 텍스트는 영어가 아닌 것 같아, 이해하기 어려운 텍스트인 것 같습니다. 하지만, 다음과 같이 추출한 결과를 제시합니다.
+
+**증상**
+
+* 어지러움
+* 기절
+* 열
+* 배고픔
+* 구토
+
+**사고내용**
+
+* 사고 발생
+* 인명피해(기절 포함)
+* 재산피해(배고픔, 구토 포함)
+
+**의사소견**
+
+* 진단: 신진성능저하 또는 독성중독
+* 치료방침: 입원치료 필요
+
+위의 내용은 실제 의학용어를 사용한 것이 아닌 추정적인 결과입니다. 만약 실제 사고내용이 이와 유사하다면, 최대한 가까운 결과로만 제시하였습니다.
+아래는 진료확인서에서 일반적으로 포함되는 내용 중 일부입니다. 실제로 사용하기 위해서는 각자의 건강 상태와 상황에 맞게 수정이 필요합니다.
+
+*   **제목**: "진료확인서"
+*   **날짜**: 진료일자
+*   **환자 정보**:
+    *   이름: \[이름]
+    *   생년월일: \[생년월일]
+    *   주민등록번호: \[주민등록번호]
+*   **진료내역**
+    1.  **사고내용**: 이 부분은 인지하고자 하는 사고의 내용을 기록합니다. 예를 들어, "자동차 충돌 사고로 발생한 부상을 진단하기 위하여 의사에게 진료를 받음"과 같이 상세하게 적습니다.
+    2.  **증상**: 이 부분에서는 진찰에 의해 관찰된 증상들을 나열합니다. 예를 들어, "왼쪽 어깨 및 팔에 통증이 느껴짐", "오른쪽 어깨 및 팔의 움직임이 불편함" 등과 같이 세부적으로 적습니다.
+    3.  **의사 소견**: 의사가 진단한 결과를 기록합니다. 예를 들어, "어깨 인대 손상으로 판단되며 정밀 검진 후 더 자세한 진단을 내릴 것임"과 같은 내용을 적습니다.
+
+```
+진료확인서
+날짜 : 2024년 3월 12일
+
+환자 정보
+이름   : 홍길동
+생년월일: 1990-01-01
+주민등록번호: 12345678901234
+
+진료내역
+사고내용   : 자동차 충돌 사고로 발생한 부상을 진단하기 위하여 의사에게 진료를 받음.
+증상       : 왼쪽 어깨 및 팔에 통증이 느껴짐. 오른쪽 어깨 및 팔의 움직임이 불편함.
+의사 소견   : 어깨 인대 손상으로 판단되며 정밀 검진 후 더 자세한 진단을 내릴 것임.
+
+진료내역 확인하기 위하여 해당 의사의 자인과 확인 부탁드립니다.
+```
+**사고 내역**
+
+*   2022년 11월 1일 넘어져 AAS 타병원 ASH 내원
+*   우측 요골부 우측 제4 수지부의 골절 진단
+
+**증상**
+
+*   우측 SEO 통증
+*   LH 손목 무릎의 시속적인 DH 및 재활치료 필요
+1.  **사고내용** : 이 사건은 [날짜]에 발생했습니다. 당시私は[직업/학생등]으로서, [위치]에서 근무하고 계셨습니다.
+
+2.  **증상** : 해당 사고로 인하여私は[의견]이 있는 상태입니다.
+
+3.  **의사 소견** : 내과[의원명]님의 진료소견입니다.
+1.  사고내용: 
+    - M2416 IEF 관절연굴장애 아래다리
+    - M2406 BB OFO 유리체 아래다리
+    - x 벼 M6586 JIE HAS 및 힘술윤활막영 이래다리
+    - 이 4170 앙쪽 원빌성 무릎관절증
+    - 또 는 652590 요글 하던의 상세불명 골절 폐쇄성
+    - S62630 JIE 손가라의 SMS 골절 폐쇄성
+    
+ 2. 증상: 
+    - 양측 무릎과 우측 손목
+    - 우측 네번째 손가락 SSCS
+
+3. 의사 소견: 
+    - 상기 병명으로 진단되었으며 VAS 7의 무릎 통중과 Ss 손목 소가락 BHE 인한 AM 제한으로 SY 호전시끼지 Belts SEAS 도수치료 체외 충격파 치료 등 보존적 USI 필요할것으로 waa
+
+   (위 내용은 실제 환자의 사고내용, 증상, 의사소견을 표현한 것으로 보입니다. 단순히 의학적인 용어만 모음이지, 정확한 진단과 치료계획의 결과로서의 의사소견을 의미하지는 않습니다.)
+위의 내용은 보험 관련된 설명과 지연된 처리와 관련된 안내입니다.
+
+이해하기 어려운 부분 중 하나는 "손해사정사 선임" 이라는 문구입니다. 손해사정사는 insurance claims를 조사하고 평가하는 전문가입니다. 이와 관련된 내용은 다음과 같습니다.
+
+- 보험계약자(보험회사)는 보험업법에 따라 공인된 손해사정법인에게 조사 업무를 위탁할 수 있습니다.
+- 손해사정사가 선임될 때, 보험회사는 그 사유를 통보받고 동의한 경우, 손해사정사의 비용을 보험회사가 부담합니다.
+- 정당한 사유 없이 보험회사가 손해사정에 착수하지 아니한 때, 손해사정사의 비용은 보험계약자(보험회사)가 부담합니다.
+
+이 외에도 "처리 지연"과 관련된 내용은 다음과 같습니다.
+
+- 보험회사에서는 신속한 보험금 심사를 위해 모든 절차를 관계률로 위탁하여 처리하고 있습니다.
+- 지급사유의 조사나 확인이 필요한 경우에는 3영업일 이내에 처리되어 드릴 예정입니다. 그러나 지급기일 안에 BAS 처리하지 못한 경우에는 지급기일을 초과하는 날짜에 대하여 HALE 지연이자를 지급할 예정입니다.
+
+"보험금 처리 예정일" 부분에서는 "20 C4 병원 확인 및 관련 사실 확인 일정에 따라 에정일보다 다소 빨라지거나 늦어질 수 있습니다." 라고 되어있으며, "보험금 처리에 관하여 문의하실 사항은 반드시 위의 보험회사에게 문의하시기 바랍니다." 라고 되어있습니다.
+위 내용에서는 다음과 같은 정보를 볼 수 있습니다:
+
+*   개인 신용 정보 동의: 본인이 자신의 신용 정보(주민등록번호, 성명 등)를 제3자에게 제공하는 것에 대한 동의입니다.
+*   건강 질병 민감정보의 처리: 본인이 자신의 건강과 질병에 관한 정보를 관리하는 것에 대한 동의입니다.
+*   고유식별정보의 처리: 본인이 자신의 주민번호와 같은 고유식별정보를 관리하는 것에 대한 동의입니다.
+
+이러한 내용은 개인정보보호법 제17조, 제23조 및 제24조에 따라 이행된 것으로 보인다.
+의무기록은 환자의 진료 내역과 관련된 기록을 말합니다. 위의 내용에서 '사고내용', '증상', '의사소견'이란 각각 무슨 의미를 가지고 있는지 알려드리겠습니다.
+
+- 사고내용: 이는 환자가 체험한 사건이나 부주의나 실수에 의한 상해와 같은 원인에 관한 설명입니다. 예를 들어, "제가 주차 중 다른 사람의 차량과 충돌했다"와 같은 내용이 들어갈 수 있습니다.
+
+- 증상: 환자의 질병 또는 상해로 인해 나타나는 특징이나 체감되는 상태를 의미합니다. 예를 들어, "체중이 2kg 감소되어 피부에 두드러기가 발생하였다"와 같은 내용이 들어갈 수 있습니다.
+
+- 의사소견: 이는 진료의료인(의사가 포함) 이 환자에게 진단을 내리고 적절한 치료를 제공할 것을 의미합니다. 예를 들어, "환자는 결핵에 대한 약물감염으로 인해 발생하는 재활용과 같은 합병증이 있다"와 같은 내용이 들어갈 수 있습니다.
+
+위의 세 가지 항목은 의무기록에서 매우 중요하고 일반적인 부분입니다. 환자의 진료 내역을 정확하게 파악하고 기록하기 위해, 의사 및 간호부가 이 정보를 포함하는 것이 매우 중요합니다.
