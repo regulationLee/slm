@@ -25,7 +25,7 @@ else:
 
 def llm_inference(prompt, stream):
     stream = ollama.chat(
-      model='aya:35b',
+      model='aya:8b',
       messages=[{'role': 'user', 'content': prompt}],
       stream=stream
     )
@@ -76,8 +76,7 @@ if __name__ == "__main__":
 
     print(f'\nDocument Process time: {doc_time:.2f}s')
 
-    doc_prompt = '\n\n 위의 손해사정보고서의 포맷 분석'
-    # input_prompt = doc_prompt + '  ' + user_info_prompt
+    doc_prompt = '\n\n 위의 손해사정보고서의 스타일 분석'
     input_prompt = doc_prompt
 
     start_time = time.time()
@@ -86,22 +85,66 @@ if __name__ == "__main__":
 
     print(f'SLM Document Process time: {llm_doc_time:.2f}s')
 
-    report_format_output = ''
+    contents_output = ''
     for chunk in result_stream:
         content = chunk['message']['content']
         print(chunk['message']['content'], end='', flush=True)
-        report_format_output += content
+        contents_output += content
     print('\n')
+
+    '''version00
 
     # final_prompt = f'\n\n {report_format_output} 위의 손해사정보고서의 내용을 다음의 내용을 바탕으로 수정해줘'
     # final_stream = llm_inference(final_prompt + diagnosis_str, stream=True)
-    final_prompt = '위의 손해사정보고서의 스타일로 다음의 정보들 이용해서 보험금 지급 여부 판단을 포함하여 손해사정보고서 작성해줘'
+    print("=" * 50)
+    # final_prompt = '위의 손해사정보고서의 스타일로 아래의 조사기록을 분석해서 보험금 지급 여부 판단을 포함한 손해사정보고서 작성'
+    final_prompt = '위의 손해사정보고서의 스타일로 아래의 조사기록을 분석해서 보험금 지급 여부 판단을 포함한 손해사정보고서 작성'
     final_stream = llm_inference(final_prompt + user_info_prompt + diagnosis_str, stream=True)
 
-    print('Result Generation')
-
+    contents_output = ''
     for chunk in final_stream:
+        content = chunk['message']['content']
         print(chunk['message']['content'], end='', flush=True)
+        contents_output += content
+    print('\n')
+
+    print("=" * 50)
+    final_prompt = f'{contents_output} \n\n 위의 손해사정보고서 내용을 일자별로 요약.'
+    final_stream = llm_inference(final_prompt, stream=True)
+
+    contents_output = ''
+    for chunk in final_stream:
+        content = chunk['message']['content']
+        print(chunk['message']['content'], end='', flush=True)
+        contents_output += content
+    print('\n')
+    
+    '''
+
+    # final_prompt = f'\n\n {report_format_output} 위의 손해사정보고서의 내용을 다음의 내용을 바탕으로 수정해줘'
+    # final_stream = llm_inference(final_prompt + diagnosis_str, stream=True)
+    print("=" * 50)
+    # final_prompt = '위의 손해사정보고서의 스타일로 아래의 조사기록을 분석해서 보험금 지급 여부 판단을 포함한 손해사정보고서 작성'
+    final_prompt = '위의 손해사정보고서의 스타일로 아래의 조사기록을 분석해서 손해사정보고서 작성'
+    final_stream = llm_inference(final_prompt + user_info_prompt + diagnosis_str, stream=True)
+
+    contents_output = ''
+    for chunk in final_stream:
+        content = chunk['message']['content']
+        print(chunk['message']['content'], end='', flush=True)
+        contents_output += content
+    print('\n')
+
+    print("=" * 50)
+    final_prompt = f'{contents_output} \n\n 위의 손해사정보고서 내용을 기반으로 보험금 지급 여부 판단.'
+    final_stream = llm_inference(final_prompt, stream=True)
+
+    contents_output = ''
+    for chunk in final_stream:
+        content = chunk['message']['content']
+        print(chunk['message']['content'], end='', flush=True)
+        contents_output += content
     print('\n')
 
 print('Done')
+
