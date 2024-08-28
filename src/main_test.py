@@ -66,6 +66,35 @@ if __name__ == "__main__":
     args.gen_report = True
     # args.convert_tiff = True
 
+    print("\n")
+    print("=" * 50)
+    print("Read Report Template and Apply User Info ")
+    print("=" * 50)
+    report_file = '손해사정_보고서_샘플.docx'
+    file_path = os.path.join(DATA_PATH, report_file)
+    start_time = time.time()
+    document = read_report(file_path)
+    doc_time = (time.time() - start_time) / 60
+
+    print(f'\nDocument Process time: {doc_time:.2f}s')
+
+    doc_prompt = '\n\n 위의 손해사정보고서의 스타일 분석'
+    input_prompt = doc_prompt
+
+    start_time = time.time()
+    result_stream = llm_inference(document[0].text + input_prompt, stream=True)
+    llm_doc_time = (time.time() - start_time) / 60
+
+    print(f'SLM Document Process time: {llm_doc_time:.2f}s')
+
+    contents_output = ''
+    for chunk in result_stream:
+        content = chunk['message']['content']
+        print(chunk['message']['content'], end='', flush=True)
+        contents_output += content
+    print('\n')
+
+
     if args.task == "doc":
         ####### read report sample and convert to str ############
         print("\n")
@@ -242,8 +271,8 @@ if __name__ == "__main__":
         # eval_promplt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
         # eval_stream = llm_inference(combined_result + eval_promplt, stream=False)
 
-        final_prompt = '\n\n 위의 내용을 이용해서 아래 정보의 고객에 대한 손해사정보고서를 만들어줘.'
-        final_stream = llm_inference(combined_result + final_prompt + user_info_prompt, stream=True)
+        final_prompt = '위의 손해사정보고서의 스타일로 아래의 조사기록을 분석해서 보험금 지급 여부 판단을 포함한 손해사정보고서 작성'
+        final_stream = llm_inference(final_prompt + user_info_prompt + combined_result, stream=True)
 
         for chunk in final_stream:
           print(chunk['message']['content'], end='', flush=True)
