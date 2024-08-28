@@ -32,7 +32,7 @@ if __name__ == "__main__":
     parser.add_argument('-cr', "--tiff_ratio", type=float, default=0.25)
     parser.add_argument('-slm', "--gen_report", action='store_true')
 
-    parser.add_argument('-r', "--readtype", type=str, default="page", help='batch or page')
+    parser.add_argument('-r', "--readtype", type=str, default="batch", help='batch or page')
     parser.add_argument('-nn', "--name", type=str, default="성춘향")
     parser.add_argument('-na', "--age", type=str, default="38")
     parser.add_argument('-nsd', "--start", type=str, default="2024-06-01")
@@ -51,6 +51,8 @@ if __name__ == "__main__":
     args.result_path = RESULT_PATH
     user_info = parse_input(args)
     user_info_prompt = ', '.join(str(value) for value in user_info.values())
+
+    args.gen_report = True
 
     if args.task == "doc":
         ####### read report sample and convert to str ############
@@ -103,16 +105,16 @@ if __name__ == "__main__":
             print("Read Medical Records in a Single batch")
             print("=" * 50)
 
-            ## read pdf by batch
-            result_text = read_records(file_path)
-            result_lines = result_text.split('\n')
-
             file_path = 'ocr_result_words_batch.txt'
 
             if os.path.exists(file_path):
                 with open(file_path, 'r', encoding='utf-8') as file:
                     words_by_line = file.read()
             else:
+                ## read pdf by batch
+                result_text = read_records(file_path)
+                result_lines = result_text.split('\n')
+
                 for line in result_lines:
                     # pattern = r'\b[가-힣a-zA-Z0-9.-:]+\b'
                     pattern = r'[가-힣a-zA-Z0-9.-:]+'
@@ -123,11 +125,7 @@ if __name__ == "__main__":
                   for line in words_by_line:
                     file.write(f"{line}\n")
 
-            lines = words_by_line.split('\n')
-
-            df = pd.DataFrame(lines, columns=['Text'])
-            df_diagnosis = df.iloc[1766:1813]
-            combined_result = '\n'.join(df_diagnosis['Text'])
+            combined_result = words_by_line
 
         elif args.readtype == 'page':
             print("\n")
@@ -175,21 +173,65 @@ if __name__ == "__main__":
                 ocr_time = (time.time() - start_time) / 60
                 print(f'Document Process time: {ocr_time:.2f}s')
 
+    elif args.task == 'ocr_test':
+        record_file = '상해_상품안내서.pdf'
+        file_path = os.path.join(DATA_PATH, record_file)
+        pdf_document = fitz.open(file_path)
+        num_pages = pdf_document.page_count
+        extracted_text = []
+
+        record_list = []
+        words_by_line = []
+        start_time = time.time()
+
+        print("\n")
+        print("=" * 50)
+        print("Read Test Sample using OCR")
+        print("=" * 50)
+
+        result_text = read_records(file_path)
+        result_lines = result_text.split('\n')
+
+        for line in result_lines:
+            # pattern = r'\b[가-힣a-zA-Z0-9.-:]+\b'
+            pattern = r'[가-힣a-zA-Z0-9.-:]+'
+            result_words = re.findall(pattern, line)
+            words_by_line.append(' '.join(result_words))
+
+        file_path = 'OCR_TEST.txt'
+
+        with open(file_path, 'w', encoding='utf-8') as file:
+            for line in words_by_line:
+                file.write(f"{line}\n")
+
+        combined_result = words_by_line
+
+    print(f'Text length of Medical Records: {len(combined_result)}')
+
     if args.gen_report:
+        print("\n")
+        print("=" * 50)
+        print("Generate Insurance Assessment Report Assistant")
+        print("=" * 50)
         lines = combined_result.split('\n')
 
         df = pd.DataFrame(lines, columns=['Text'])
         df.replace('', np.nan, inplace=True)
         df_cleaned = df.dropna()
         df_cleaned = df_cleaned.reset_index(drop=True)
-        subset_df_cleaned = df_cleaned.iloc[1583:1625]
+        if args.readtype == 'batch':
+            subset_df_cleaned = df_cleaned.iloc[0:1632]
+        elif args.readtype == 'page':
+            subset_df_cleaned = df_cleaned.iloc[0:775]
+        else:
+            subset_df_cleaned = df_cleaned
         combined_result = '\n'.join(subset_df_cleaned['Text'])
 
-        eval_promplt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
-        eval_stream = llm_inference(combined_result + eval_promplt, stream=False)
+        # eval_promplt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
+        # eval_stream = llm_inference(combined_result + eval_promplt, stream=False)
 
-        final_promplt = '\n\n 위의 내용을 이용해서 손해사정보고서에 쓰일 문구를 만들어줘.'
-        final_stream = llm_inference(user_info_prompt + eval_stream['message']['content'] + final_promplt, stream=True)
+        final_prompt = '\n\n 위의 내용을 이용해서 아래 정보의 고객에 대한 자세한 손해사정보고서를 만들어줘.'
+        final_stream = llm_inference(combined_result + final_prompt + user_info_prompt, stream=True)
 
         for chunk in final_stream:
           print(chunk['message']['content'], end='', flush=True)
