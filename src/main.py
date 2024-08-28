@@ -1,96 +1,112 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
-import torch
-from accelerate import Accelerator
-from accelerate.utils import set_seed
+# -*- coding: utf-8 -*-
+# !/usr/bin/env python
+import os
+import io
+import numpy
+import fitz
+import time
+import argparse
+import ollama
+import pandas as pd
+import numpy as np
 
-# 모델 이름 정의
-model_path = "/home/glee/sakak/slm/models/Meta-Llama-3.1-70B-Instruct"
-#model_path = "/home/glee/sakak/slm/models/Meta-Llama-3.1-70B"
+from text_parser import *
+from poc_medical_record import *
 
-quantization_config = BitsAndBytesConfig(
-    load_in_8bit=True,
-    llm_int8_threshold=6.0,
-    llm_int8_has_fp16_weight=False,
-)
+DATA_PATH = '/Users/glee/Desktop/sakak/TSA/samples/'
+RESULT_PATH = '/Users/glee/Desktop/sakak/slm/results/'
 
-# Accelerator 설정
-accelerator = Accelerator(split_batches=True, dispatch_batches=True)
 
-# 모델과 토크나이저 로드
-tokenizer = AutoTokenizer.from_pretrained(model_path, token=True)
-model = AutoModelForCausalLM.from_pretrained(
-    model_path,
-    quantization_config=quantization_config,
-    torch_dtype=torch.float16,  # fp16 precision으로 로드
-    device_map="auto",  # 자동으로 GPU에 분배
-    token=True
-)
-
-if tokenizer.pad_token is None:
-    tokenizer.pad_token = tokenizer.eos_token
-
-# 모델과 토크나이저를 accelerator로 준비
-model, tokenizer = accelerator.prepare(model, tokenizer)
-
-# 입력 텍스트 정의
-input_texts = "상대성이론에 대해 설명해줘"
-
-# 입력 텍스트를 토큰화
-inputs = tokenizer(input_texts, return_tensors="pt", padding=True, truncation=True, max_length=500)
-#inputs = tokenizer(input_texts, return_tensors="pt").to('cuda')
-
-# accelerator로 입력을 준비
-inputs = {k: v.to(accelerator.device) for k, v in inputs.items()}
-
-# 모델 예측
-with torch.no_grad():
-    outputs = accelerator.unwrap_model(model).generate(
-        **inputs,
-        max_length=512,
-        num_return_sequences=1,
-        repetition_penalty = 1.2,
-        top_k = 50,
-        top_p = 0.9,
-        temperature=0.7
+def llm_inference(prompt, stream):
+    stream = ollama.chat(
+      model='llama3.1:latest',
+      messages=[{'role': 'user', 'content': prompt}],
+      stream=stream
     )
-
-# 결과 디코딩
-generated_texts = tokenizer.decode(outputs[0], skip_special_tokens=True)
-
-# 결과 출력
-print(f"Generated Text: {generated_texts}")
+    return stream
 
 
-# 메모리 해제
-torch.cuda.empty_cache()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-t', "--task", type=str, default="ocr", help='doc or ocr')
+    parser.add_argument('-c', "--convert_tiff", action='store_true')
+    parser.add_argument('-cr', "--tiff_ratio", type=float, default=0.25)
+    parser.add_argument('-slm', "--gen_report", action='store_true')
 
+    parser.add_argument('-r', "--readtype", type=str, default="batch", help='batch or page')
+    parser.add_argument('-nn', "--name", type=str, default="성춘향")
+    parser.add_argument('-na', "--age", type=str, default="38")
+    parser.add_argument('-nsd', "--start", type=str, default="2024-06-01")
+    parser.add_argument('-ned', "--end", type=str, default="2024-06-10")
+    parser.add_argument('-npoc', "--poc", type=str, default="이초랑")
+    parser.add_argument('-ninc', "--inc", type=str, default="TSA 손해사정")
+    parser.add_argument('-nsv', "--supervisor", type=str, default="김바다")
+    parser.add_argument('-nl', "--leader", type=str, default="이칠성")
+    parser.add_argument('-ncon', "--contract", type=str, default="가나다 건강보험")
+    parser.add_argument('-nconno', "--connum", type=str, default="0000048번")
+    parser.add_argument('-ncond', "--conday", type=str, default="2021-07-01")
+    parser.add_argument('-ncons', "--constatus", type=str, default="정상유지")
 
-'''
+    args = parser.parse_args()
+    args.data_path = DATA_PATH
+    args.result_path = RESULT_PATH
+    user_info = parse_input(args)
+    user_info_prompt = ', '.join(str(value) for value in user_info.values())
 
+    args.gen_report = True
+    # args.convert_tiff = True
 
+    # diagnosis_str = load_medical_data_poc()
 
-import transformers
-import torch
+    # print("\n")
+    # print("=" * 50)
+    # print("Read Report Template and Apply User Info ")
+    # print("=" * 50)
+    # report_file = '손해사정_보고서_샘플.docx'
+    # file_path = os.path.join(DATA_PATH, report_file)
+    # start_time = time.time()
+    # document = read_report(file_path)
+    # doc_time = (time.time() - start_time) / 60
+    #
+    # print(f'\nDocument Process time: {doc_time:.2f}s')
+    #
+    # doc_prompt = '\n\n 위의 손해사정보고서의 내용에서 다음의 정보만 수정한 새로운 손해사정보고서를 만들어줘'
+    # input_prompt = doc_prompt + '  ' + user_info_prompt
+    #
+    # start_time = time.time()
+    # result_stream = llm_inference(document[0].text + input_prompt, stream=True)
+    # llm_doc_time = (time.time() - start_time) / 60
+    #
+    # print(f'SLM Document Process time: {llm_doc_time:.2f}s')
+    #
+    # for chunk in result_stream:
+    #     print(chunk['message']['content'], end='', flush=True)
+    # print('\n')
 
-model_id = "meta-llama/Meta-Llama-3.1-70B-Instruct"
+    # format_prompt = result_stream['message']['content']
 
-pipeline = transformers.pipeline(
-    "text-generation",
-    model=model_id,
-    model_kwargs={"torch_dtype": torch.bfloat16},
-    device_map="auto",
-)
+    # final_prompt = '\n\n 아래의 소견서 내용이 한 명의 환자에 대한 소견서일 때 아래의 내용을 한 문장으로 자세하게 요약해줘'
+    # final_stream = llm_inference(final_prompt + diagnosis_str, stream=True)
+    #
+    # for chunk in final_stream:
+    #     print(chunk['message']['content'], end='', flush=True)
+    # print('\n')
 
-messages = [
-    {"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak!"},
-    {"role": "user", "content": "Who are you?"},
-]
+    final_prompt = '파이토치로 Cifar-10 classification을 학습하는 코드 예제'
+    final_stream = llm_inference(final_prompt, stream=True)
 
-outputs = pipeline(
-    messages,
-    max_new_tokens=256,
-)
-print(outputs[0]["generated_text"][-1])
+    output = ''
+    for chunk in final_stream:
+        content = chunk['message']['content']
+        print(content, end='', flush=True)
+        output += content
+    print('\n')
 
-'''
+    final_prompt = f'{output} 위의 코드에서 사용한 옵티마이저에 대해 설명'
+    final_stream = llm_inference(final_prompt, stream=True)
 
+    for chunk in final_stream:
+        print(chunk['message']['content'], end='', flush=True)
+    print('\n')
+
+print('Done')

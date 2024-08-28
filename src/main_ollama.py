@@ -53,6 +53,7 @@ if __name__ == "__main__":
     user_info_prompt = ', '.join(str(value) for value in user_info.values())
 
     args.gen_report = True
+    # args.convert_tiff = True
 
     if args.task == "doc":
         ####### read report sample and convert to str ############
@@ -220,14 +221,14 @@ if __name__ == "__main__":
         df_cleaned = df.dropna()
         df_cleaned = df_cleaned.reset_index(drop=True)
         if args.readtype == 'batch':
-            subset_df_cleaned = df_cleaned.iloc[0:1632]
+            subset_df_cleaned = df_cleaned.iloc[600:1632]
         elif args.readtype == 'page':
             subset_df_cleaned = df_cleaned.iloc[0:775]
         else:
             subset_df_cleaned = df_cleaned
         combined_result = '\n'.join(subset_df_cleaned['Text'])
 
-        # eval_promplt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
+        # eval_prompt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
         # eval_stream = llm_inference(combined_result + eval_promplt, stream=False)
 
         final_prompt = '\n\n 위의 내용을 이용해서 아래 정보의 고객에 대한 자세한 손해사정보고서를 만들어줘.'
