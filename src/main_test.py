@@ -272,7 +272,7 @@ if __name__ == "__main__":
         # eval_stream = llm_inference(combined_result + eval_promplt, stream=False)
 
         final_prompt = '위의 손해사정보고서의 스타일로 아래의 조사기록을 분석해줘'
-        final_stream = llm_inference(combined_result, stream=True)
+        final_stream = llm_inference(final_prompt + combined_result, stream=True)
 
         records_output = ''
         for chunk in final_stream:
