@@ -9,17 +9,23 @@ import argparse
 import ollama
 import pandas as pd
 import numpy as np
+import platform
 
 from text_parser import *
 from poc_medical_record import *
 
-DATA_PATH = '/Users/glee/Desktop/sakak/TSA/samples/'
-RESULT_PATH = '/Users/glee/Desktop/sakak/slm/results/'
+if platform.system() == 'Linux':
+    DATA_PATH = '/home/glee/sakak/data/TSA/samples/'
+    RESULT_PATH = '/home/glee/sakak/slm/results/'
+else:
+    DATA_PATH = '/Users/glee/Desktop/sakak/TSA/samples/'
+    RESULT_PATH = '/Users/glee/Desktop/sakak/slm/results/'
+
 
 
 def llm_inference(prompt, stream):
     stream = ollama.chat(
-      model='llama3.1:latest',
+      model='aya:35b',
       messages=[{'role': 'user', 'content': prompt}],
       stream=stream
     )
@@ -62,7 +68,7 @@ if __name__ == "__main__":
     print("=" * 50)
     print("Read Report Template and Apply User Info ")
     print("=" * 50)
-    report_file = '손해사정_보고서_샘플.docx'
+    report_file = '손해사정_보고서_샘플.docx'
     file_path = os.path.join(DATA_PATH, report_file)
     start_time = time.time()
     document = read_report(file_path)
@@ -70,8 +76,9 @@ if __name__ == "__main__":
 
     print(f'\nDocument Process time: {doc_time:.2f}s')
 
-    doc_prompt = '\n\n 위의 손해사정보고서의 내용에서 다음의 정보만 수정해줘'
-    input_prompt = doc_prompt + '  ' + user_info_prompt
+    doc_prompt = '\n\n 위의 손해사정보고서의 포맷 분석'
+    # input_prompt = doc_prompt + '  ' + user_info_prompt
+    input_prompt = doc_prompt
 
     start_time = time.time()
     result_stream = llm_inference(document[0].text + input_prompt, stream=True)
@@ -86,8 +93,12 @@ if __name__ == "__main__":
         report_format_output += content
     print('\n')
 
-    final_prompt = f'\n\n {report_format_output} 위의 손해사정보고서의 내용을 다음의 소견서 내용을 바탕으로 수정해줘'
-    final_stream = llm_inference(final_prompt + diagnosis_str, stream=True)
+    # final_prompt = f'\n\n {report_format_output} 위의 손해사정보고서의 내용을 다음의 내용을 바탕으로 수정해줘'
+    # final_stream = llm_inference(final_prompt + diagnosis_str, stream=True)
+    final_prompt = '위의 손해사정보고서의 스타일로 다음의 정보들 이용해서 손해사정보고서 작성해줘'
+    final_stream = llm_inference(final_prompt + user_info_prompt + diagnosis_str, stream=True)
+
+    print('Result Generation')
 
     for chunk in final_stream:
         print(chunk['message']['content'], end='', flush=True)

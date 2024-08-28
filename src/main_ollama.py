@@ -9,16 +9,22 @@ import argparse
 import ollama
 import pandas as pd
 import numpy as np
+import platform
 
 from text_parser import *
 
-DATA_PATH = '/Users/glee/Desktop/sakak/TSA/samples/'
-RESULT_PATH = '/Users/glee/Desktop/sakak/slm/results/'
+if platform.system() == 'Linux':
+    DATA_PATH = '/home/glee/sakak/data/TSA/samples/'
+    RESULT_PATH = '/home/glee/sakak/slm/results/'
+else:
+    DATA_PATH = '/Users/glee/Desktop/sakak/TSA/samples/'
+    RESULT_PATH = '/Users/glee/Desktop/sakak/slm/results/'
 
 
 def llm_inference(prompt, stream):
     stream = ollama.chat(
-      model='llama3.1:latest',
+      model='llama3.1:70b',
+      # model='llama3.1:latest',
       messages=[{'role': 'user', 'content': prompt}],
       stream=stream
     )
@@ -61,7 +67,7 @@ if __name__ == "__main__":
         print("=" * 50)
         print("Read Report Template and Apply User Info ")
         print("=" * 50)
-        report_file = '손해사정_보고서_샘플.docx'
+        report_file = '손해사정_보고서_샘플.docx'
         file_path = os.path.join(DATA_PATH, report_file)
         start_time = time.time()
         document = read_report(file_path)
@@ -86,7 +92,7 @@ if __name__ == "__main__":
         ####### read medical report and convert to str ############
         pages_to_read = 1
 
-        record_file = '차트정보_w_ocr.pdf'
+        record_file = '차트정보_w_ocr.pdf'
         file_path = os.path.join(DATA_PATH, record_file)
         pdf_document = fitz.open(file_path)
         num_pages = pdf_document.page_count
@@ -106,10 +112,10 @@ if __name__ == "__main__":
             print("Read Medical Records in a Single batch")
             print("=" * 50)
 
-            file_path = 'ocr_result_words_batch.txt'
+            result_file_path = 'ocr_result_words_batch.txt'
 
-            if os.path.exists(file_path):
-                with open(file_path, 'r', encoding='utf-8') as file:
+            if os.path.exists(result_file_path):
+                with open(result_file_path, 'r', encoding='utf-8') as file:
                     words_by_line = file.read()
             else:
                 ## read pdf by batch
@@ -122,7 +128,7 @@ if __name__ == "__main__":
                     result_words = re.findall(pattern, line)
                     words_by_line.append(' '.join(result_words))
 
-                with open(file_path, 'w', encoding='utf-8') as file:
+                with open(result_file_path, 'w', encoding='utf-8') as file:
                   for line in words_by_line:
                     file.write(f"{line}\n")
 
@@ -134,10 +140,10 @@ if __name__ == "__main__":
             print("Read Medical Records in Batches by Page")
             print("=" * 50)
             ## read pdf by page
-            file_path = "ocr_result_words_page.txt"
+            result_file_path = "ocr_result_words_page.txt"
 
-            if os.path.exists(file_path):
-                with open(file_path, 'r', encoding='utf-8') as file:
+            if os.path.exists(result_file_path):
+                with open(result_file_path, 'r', encoding='utf-8') as file:
                     combined_result = file.read()
             else:
                 for page_num in range(0, num_pages, pages_to_read):
@@ -168,7 +174,7 @@ if __name__ == "__main__":
 
                 combined_result = '\n'.join(record_list)
 
-                with open(file_path, "w", encoding='utf-8') as text_file:
+                with open(result_file_path, "w", encoding='utf-8') as text_file:
                     text_file.write(combined_result)
 
                 ocr_time = (time.time() - start_time) / 60
@@ -221,14 +227,14 @@ if __name__ == "__main__":
         df_cleaned = df.dropna()
         df_cleaned = df_cleaned.reset_index(drop=True)
         if args.readtype == 'batch':
-            subset_df_cleaned = df_cleaned.iloc[600:1632]
+            subset_df_cleaned = df_cleaned.iloc[0:1632]
         elif args.readtype == 'page':
             subset_df_cleaned = df_cleaned.iloc[0:775]
         else:
             subset_df_cleaned = df_cleaned
         combined_result = '\n'.join(subset_df_cleaned['Text'])
 
-        # eval_prompt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
+        # eval_promplt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
         # eval_stream = llm_inference(combined_result + eval_promplt, stream=False)
 
         final_prompt = '\n\n 위의 내용을 이용해서 아래 정보의 고객에 대한 자세한 손해사정보고서를 만들어줘.'

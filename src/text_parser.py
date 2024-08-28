@@ -158,7 +158,7 @@ def pdf_to_tiff(conf, input_file_name):
         new_size = (int(page.width * resize_ratio), int(page.height * resize_ratio))
         resized_image = page.resize(new_size, Image.Resampling.LANCZOS)
 
-        output_file = os.path.join(conf.RESULT_PATH, f"{file_name}_{i}.tiff")
+        output_file = os.path.join(conf.result_path, f"{file_name}_{i}.tiff")
         resized_image.save(output_file, format="TIFF", compression="jpeg", quality=30)  # 품질 30%
 
     ###### Convert single tiff to multi tiff
@@ -172,9 +172,9 @@ def pdf_to_tiff(conf, input_file_name):
             compression="tiff_deflate"  # 압축 옵션 설정 (선택 사항)
         )
 
-    filelist = glob.glob(conf.RESULT_PATH + "*.tiff")
+    filelist = glob.glob(conf.result_path + "*.tiff")
     filelist.sort()
-    output_file = conf.RESULT_PATH + f"{file_name}_multitiff.tiff"
+    output_file = conf.result_path + f"{file_name}_multitiff.tiff"
 
     merge_tiffs(filelist, output_file)
 
