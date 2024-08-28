@@ -56,54 +56,38 @@ if __name__ == "__main__":
     args.gen_report = True
     # args.convert_tiff = True
 
-    # diagnosis_str = load_medical_data_poc()
+    diagnosis_str = load_medical_data_poc()
 
-    # print("\n")
-    # print("=" * 50)
-    # print("Read Report Template and Apply User Info ")
-    # print("=" * 50)
-    # report_file = '손해사정_보고서_샘플.docx'
-    # file_path = os.path.join(DATA_PATH, report_file)
-    # start_time = time.time()
-    # document = read_report(file_path)
-    # doc_time = (time.time() - start_time) / 60
-    #
-    # print(f'\nDocument Process time: {doc_time:.2f}s')
-    #
-    # doc_prompt = '\n\n 위의 손해사정보고서의 내용에서 다음의 정보만 수정한 새로운 손해사정보고서를 만들어줘'
-    # input_prompt = doc_prompt + '  ' + user_info_prompt
-    #
-    # start_time = time.time()
-    # result_stream = llm_inference(document[0].text + input_prompt, stream=True)
-    # llm_doc_time = (time.time() - start_time) / 60
-    #
-    # print(f'SLM Document Process time: {llm_doc_time:.2f}s')
-    #
-    # for chunk in result_stream:
-    #     print(chunk['message']['content'], end='', flush=True)
-    # print('\n')
+    print("\n")
+    print("=" * 50)
+    print("Read Report Template and Apply User Info ")
+    print("=" * 50)
+    report_file = '손해사정_보고서_샘플.docx'
+    file_path = os.path.join(DATA_PATH, report_file)
+    start_time = time.time()
+    document = read_report(file_path)
+    doc_time = (time.time() - start_time) / 60
 
-    # format_prompt = result_stream['message']['content']
+    print(f'\nDocument Process time: {doc_time:.2f}s')
 
-    # final_prompt = '\n\n 아래의 소견서 내용이 한 명의 환자에 대한 소견서일 때 아래의 내용을 한 문장으로 자세하게 요약해줘'
-    # final_stream = llm_inference(final_prompt + diagnosis_str, stream=True)
-    #
-    # for chunk in final_stream:
-    #     print(chunk['message']['content'], end='', flush=True)
-    # print('\n')
+    doc_prompt = '\n\n 위의 손해사정보고서의 내용에서 다음의 정보만 수정해줘'
+    input_prompt = doc_prompt + '  ' + user_info_prompt
 
-    final_prompt = '파이토치로 Cifar-10 classification을 학습하는 코드 예제'
-    final_stream = llm_inference(final_prompt, stream=True)
+    start_time = time.time()
+    result_stream = llm_inference(document[0].text + input_prompt, stream=True)
+    llm_doc_time = (time.time() - start_time) / 60
 
-    output = ''
-    for chunk in final_stream:
+    print(f'SLM Document Process time: {llm_doc_time:.2f}s')
+
+    report_format_output = ''
+    for chunk in result_stream:
         content = chunk['message']['content']
-        print(content, end='', flush=True)
-        output += content
+        print(chunk['message']['content'], end='', flush=True)
+        report_format_output += content
     print('\n')
 
-    final_prompt = f'{output} 위의 코드에서 사용한 옵티마이저에 대해 설명'
-    final_stream = llm_inference(final_prompt, stream=True)
+    final_prompt = f'\n\n {report_format_output} 위의 손해사정보고서의 내용을 다음의 소견서 내용을 바탕으로 수정해줘'
+    final_stream = llm_inference(final_prompt + diagnosis_str, stream=True)
 
     for chunk in final_stream:
         print(chunk['message']['content'], end='', flush=True)
