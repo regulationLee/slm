@@ -271,7 +271,7 @@ if __name__ == "__main__":
         # eval_promplt = '\n\n 위의 정보들 이용해서 진단 및 치료내역, 소견내용, 처리과정을 작성해줘.'
         # eval_stream = llm_inference(combined_result + eval_promplt, stream=False)
 
-        final_prompt = '위의 손해사정보고서의 스타일로 아래의 조사기록을 분석해줘'
+        final_prompt = '아래의 조사기록 요약'
         final_stream = llm_inference(final_prompt + combined_result, stream=True)
 
         records_output = ''
