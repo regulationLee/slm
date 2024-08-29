@@ -126,7 +126,7 @@ if __name__ == "__main__":
 
     print("\n")
     print("=" * 50)
-    print("Read Report Template and Apply User Info ")
+    print("손해사정보고서 스타일 분석중")
     print("=" * 50)
     report_file = '손해사정_보고서_샘플.docx'
     file_path = os.path.join(DATA_PATH, report_file)
@@ -134,21 +134,15 @@ if __name__ == "__main__":
     document = read_doc_report(file_path)
     doc_time = (time.time() - start_time) / 60
 
-    print(f'\nDocument Process time: {doc_time:.2f}s')
-
     doc_prompt = '\n\n 위의 손해사정보고서의 스타일 분석'
     input_prompt = doc_prompt
 
-    start_time = time.time()
     result_stream = llm_inference(document[0].text + input_prompt, stream=True)
-    llm_doc_time = (time.time() - start_time) / 60
-
-    print(f'SLM Document Process time: {llm_doc_time:.2f}s')
 
     contents_output = ''
     for chunk in result_stream:
         content = chunk['message']['content']
-        print(chunk['message']['content'], end='', flush=True)
+        # print(chunk['message']['content'], end='', flush=True)
         contents_output += content
     print('\n')
 
