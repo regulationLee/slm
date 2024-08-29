@@ -109,7 +109,7 @@ if __name__ == "__main__":
     parser.add_argument('-ninc', "--inc", type=str, default="TSA 손해사정")
     parser.add_argument('-nsv', "--supervisor", type=str, default="김바다")
     parser.add_argument('-nl', "--leader", type=str, default="이칠성")
-    parser.add_argument('-ncon', "--contract", type=str, default="가나다 건강보험")
+    parser.add_argument('-ncon', "--contract", type=str, default="KB 플러스 운전자상해보험(무배당)")
     parser.add_argument('-nconno', "--connum", type=str, default="0000048번")
     parser.add_argument('-ncond', "--conday", type=str, default="2021-07-01")
     parser.add_argument('-ncons', "--constatus", type=str, default="정상유지")
@@ -194,13 +194,23 @@ if __name__ == "__main__":
     # )
     # vector_store = FAISS.from_documents(rag_online, embeddings)
 
-    queries = f'다음의 의료기록에 해당하는 내용을 찾아줘 \n\n {contents_output}'
-    relevant_docs = vector_store.similarity_search(contents_output, k=3)
-    insurance_context = "\n".join(doc.page_content for doc in relevant_docs)
-    print(insurance_context)
+    relevant_docs = vector_store.similarity_search(diagnosis_str, k=3)
+    # relevant_docs = vector_store.similarity_search(contents_output, k=3)
 
-    doc_prompt = f'Context: {insurance_context} \n Question: 위의 데이터를 바탕으로 다음의 손해사정보고서의 질병 또는 부상정보별 보험금 지급 여부 및 예상금액 판단 \n {contents_output}'
-    input_prompt = doc_prompt
+    insurance_context = "\n".join(doc.page_content for doc in relevant_docs)
+
+    print('\n')
+    print('|||| 검토대상 보장내역 ||||')
+    for i, doc in enumerate(relevant_docs):
+        print(f'({i+1}) {doc.page_content}')
+        print('\n')
+    print('\n')
+
+    input_prompt = (
+        f'Context: {insurance_context} \n '
+        f'Question: 위의 데이터를 바탕으로 다음의 손해사정보고서에 기록된 질병 또는 부상에 대한 보험금 지급 여부 및 예상금액 판단 \n'
+        f' {contents_output}'
+    )
 
     result_stream = llm_inference(input_prompt, stream=True)
 
@@ -212,7 +222,7 @@ if __name__ == "__main__":
     print("=" * 50)
     print('요약 기록 생성 중')
 
-    final_prompt = f'{contents_output} \n\n 위의 손해사정보고서 내용을 일자별로 개조식으로 요약.'
+    final_prompt = f'{contents_output} \n\n 위의 손해사정보고서 내용을 날짜순으로 개조식으로 요약.'
     final_stream = llm_inference(final_prompt, stream=True)
 
     for chunk in final_stream:
