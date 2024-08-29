@@ -5,22 +5,26 @@ import io
 from tqdm import tqdm
 import numpy as np
 from collections import defaultdict
-import easyocr
+# import easyocr
 import re
-from pypdf import PdfReader
+# from pypdf import PdfReader
 import fitz
-import pytesseract
+# import pytesseract
 from pdf2image import convert_from_path
 import glob
 from PIL import Image, ImageEnhance, ImageFilter
 import tifffile
 import numpy
 from llama_index.core import SimpleDirectoryReader
+
 from llama_index.readers.file import (
     DocxReader,
     HWPReader,
-    PyMuPDFReader,
 )
+from langchain_community.document_loaders import PyMuPDFLoader
+from typing import List
+from langchain_core.documents import Document
+import pymupdf4llm
 from pathlib import Path
 
 
@@ -56,12 +60,27 @@ def read_doc_report(path):
 
 def read_pdf_files(path):
     ############### PDF file reader #################
-    loader = PyMuPDFReader()
-    documents = loader.load_data(file_path=path, metadata=True)
-    full_text = ""
-    for doc in documents:
-        full_text += doc.text
-    return full_text
+    loader = PyMuPDFLoader(file_path=path)
+    documents = loader.load()
+    full_text = pymupdf4llm.to_markdown(path)
+    full_text = full_text.replace('\n', ' ').strip()
+
+    def remove_newlines_except_after_period(text):
+        return re.sub(r'(?<!\.)(\n|\r\n)', ' ', text)
+
+    def process_pages(pages: List[Document]) -> List[Document]:
+        return [Document(page_content=remove_newlines_except_after_period(page.page_content), metadata=page.metadata)
+                for page in pages]
+
+    processed_data = process_pages(documents)
+
+    # full_text = ""
+    # for doc in documents:
+    #     content = doc.page_content
+    #     if content.strip():
+    #         full_text += content
+
+    return processed_data
 
 
 def read_records(path):
