@@ -43,7 +43,7 @@ if __name__ == "__main__":
     file_path = os.path.join(DATA_PATH, record_file)
     contents = read_pdf_files(file_path)
 
-    doc_prompt = f' {contents} \n\n 위의 보험약관에서 다음의 의료기록에 해당하는 내용을 찾아줘 \n\n {diagnosis_str}'
+    doc_prompt = f' {contents} \n\n 위의 보험 약관을 바탕으로 다음의 의료기록에 대한 보험금 지급 관련된 내용을 찾아줘 \n {diagnosis_str}'
     # doc_prompt = f'다음의 약관내용을 분석해줘 {contents}'
     input_prompt = doc_prompt
 
