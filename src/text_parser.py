@@ -47,17 +47,23 @@ def parse_input(input):
     return personal_info
 
 
-def read_report(path):
+def read_doc_report(path):
     ################# Read DOCX file and print #################
     loader = DocxReader()
     documents = loader.load_data(path)
     return documents
 
 
-################ PDF file reader #################
-# loader = PyMuPDFReader()
-# documents = loader.load_data(file_path=file_path, metadata=True)
-# print([doc for doc in documents if doc.metadata.get('source') == '8']) # 8쪽만 확인
+def read_pdf_files(path):
+    ############### PDF file reader #################
+    loader = PyMuPDFReader()
+    documents = loader.load_data(file_path=path, metadata=True)
+    full_text = ""
+    for doc in documents:
+        full_text += doc.text
+    return full_text
+
+
 def read_records(path):
     pdf_document = fitz.open(path)
     num_pages = pdf_document.page_count

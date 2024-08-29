@@ -76,7 +76,7 @@ if __name__ == "__main__":
     report_file = '손해사정_보고서_샘플.docx'
     file_path = os.path.join(DATA_PATH, report_file)
     start_time = time.time()
-    document = read_report(file_path)
+    document = read_doc_report(file_path)
     doc_time = (time.time() - start_time) / 60
 
     print(f'\nDocument Process time: {doc_time:.2f}s')
