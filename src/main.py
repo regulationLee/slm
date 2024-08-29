@@ -165,7 +165,7 @@ if __name__ == "__main__":
     print('\n')
 
     print("=" * 50)
-    print('보험 약관 데이터 분석을 통한 보험금 지급 여부 및 금액 판단 중중')
+    print('보험 약관 데이터 분석을 통한 보험금 지급 여부 및 금액 판단 중')
 
     record_file = '상해_상품안내서.pdf'
     file_path = os.path.join(DATA_PATH, record_file)
@@ -194,12 +194,12 @@ if __name__ == "__main__":
     # )
     # vector_store = FAISS.from_documents(rag_online, embeddings)
 
-
     queries = f'다음의 의료기록에 해당하는 내용을 찾아줘 \n\n {contents_output}'
-    relevant_docs = vector_store.similarity_search(queries, k=3)
-    insurance_context = " ".join(doc.page_content for doc in relevant_docs)
+    relevant_docs = vector_store.similarity_search(contents_output, k=3)
+    insurance_context = "\n".join(doc.page_content for doc in relevant_docs)
+    print(insurance_context)
 
-    doc_prompt = f'Context: {insurance_context} \n Question: 이 보험 약관 데이터를 바탕으로 다음의 손해사정보고서의 질병 또는 부상정보별 보험금 지급 여부 및 예상금액 판단 \n {contents_output}'
+    doc_prompt = f'Context: {insurance_context} \n Question: 위의 데이터를 바탕으로 다음의 손해사정보고서의 질병 또는 부상정보별 보험금 지급 여부 및 예상금액 판단 \n {contents_output}'
     input_prompt = doc_prompt
 
     result_stream = llm_inference(input_prompt, stream=True)
