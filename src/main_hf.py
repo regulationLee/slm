@@ -19,7 +19,7 @@ from sentence_transformers import SentenceTransformer
 import pdfplumber
 
 
-HfFolder.save_token("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")
+HfFolder.save_token("")
 model_id = "meta-llama/Llama-3.2-1B-Instruct"
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.2-1B-Instruct", use_fast=False)
