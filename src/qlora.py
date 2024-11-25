@@ -40,7 +40,7 @@ import time
 #   !pip install trl
 
 import os
-os.environ["HF_TOKEN"] = "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"
+os.environ["HF_TOKEN"] = ""
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ['TRANSFORMERS_CACHE'] = '/kaggle/working'
 
