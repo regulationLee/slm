@@ -13,10 +13,6 @@ import platform
 import itertools
 import torch
 
-
-from text_parser import *
-from poc_medical_record import *
-
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
@@ -24,8 +20,9 @@ from sentence_transformers import SentenceTransformer
 import pdfplumber
 
 from transformers import AutoTokenizer, AutoModel
-import faiss
-import os
+
+from text_parser import *
+from poc_medical_record import *
 
 os.environ['OMP_NUM_THREADS'] = '1'
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
@@ -45,7 +42,9 @@ def llm_inference(prompt, stream):
     if platform.system() == 'Linux':
         model_name = 'aya:35b'
     else:
-        model_name = 'aya:8b'
+        # model_name = 'aya:8b'
+        # model_name = 'aya-expanse:8b'
+        model_name = 'qwen2.5:0.5b'
 
     stream = ollama.chat(
       model=model_name,
@@ -114,6 +113,8 @@ if __name__ == "__main__":
     parser.add_argument('-ncond', "--conday", type=str, default="2021-07-01")
     parser.add_argument('-ncons', "--constatus", type=str, default="정상유지")
 
+    # parser.add_argument('-arag', "--add_rag", store=True)
+
     args = parser.parse_args()
     args.data_path = DATA_PATH
     args.result_path = RESULT_PATH
@@ -121,6 +122,7 @@ if __name__ == "__main__":
     user_info_prompt = ', '.join(str(value) for value in user_info.values())
 
     args.gen_report = True
+    args.add_rag = True
 
     diagnosis_str = load_medical_data_poc()
 
@@ -173,6 +175,7 @@ if __name__ == "__main__":
         model = SentenceTransformer(model_name)
         model.save(local_model_path)
 
+    # # local(offline) embedding
     embeddings = HuggingFaceEmbeddings(
         model_name=local_model_path,
         model_kwargs={'device': DEVICE},
@@ -189,7 +192,6 @@ if __name__ == "__main__":
     # vector_store = FAISS.from_documents(rag_online, embeddings)
 
     relevant_docs = vector_store.similarity_search(diagnosis_str, k=3)
-    # relevant_docs = vector_store.similarity_search(contents_output, k=3)
 
     insurance_context = "\n".join(doc.page_content for doc in relevant_docs)
 
