@@ -205,7 +205,7 @@ import random  # 무작위 작업을 수행하기 위한 표준 라이브러리
 from tqdm import tqdm  # 반복문 진행 상황을 시각적으로 표시해 주는 라이브러리
 
 # JSON 파일 경로
-json_path = '/content/EN_TO_KO.json'
+json_path = 'EN_TO_KO.json'
 
 # JSON 파일을 열고 텍스트 항목을 읽습니다.
 with open(json_path, encoding='utf-8') as f:
